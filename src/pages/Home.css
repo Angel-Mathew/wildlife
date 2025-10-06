@@ -1,0 +1,84 @@
+/* Main content area */
+.main_image {
+ width: 101.5%;
+  height: auto;
+  margin-top: 5%; /* to avoid being hidden under the fixed header */
+ margin-left: -1%;
+  display: block;
+}
+
+
+
+.introduction {
+  color: black;
+  font-size: 21px;
+  margin-top: -45%;  
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+/*this is for the welcome button*/
+.welcome {
+ margin-left: 5%;
+ padding: 10px 25px;
+  font-size: 20px;
+  background-color: #526344;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: #000000 0px 12px 18px -10px;
+}
+/* About Section */
+.label-container {
+  position: relative;
+  width: 280px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.label-img {
+  width: 100%;
+  height: auto;
+  margin-top: 90%;
+  z-index: 1;
+  display: block;
+  margin-left: -170%;
+}
+
+.label-text {
+  position: absolute;
+  top: 205px;
+  left: -125%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.bird {
+  position: absolute;
+  top: 175px;     /* adjust vertically */
+  left: -100%;   /* adjust horizontally */
+  width: 45px;  /* scale as needed */
+  height: auto;
+  z-index: 3;   /* above the label image */
+}
+
+.about{
+  margin-top: -60%;
+  
+}
+.about-text {
+  color: rgb(241, 241, 241);
+  font-size: 25px;
+  margin-top: -160%;
+  margin-left: -200%;
+  width: 150%;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px;
+}

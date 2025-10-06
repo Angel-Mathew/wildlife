@@ -1,0 +1,86 @@
+/* Navbar.css */
+.navbar {
+  background-color: #0B7A75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;   /* stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full width */
+  z-index: 10;
+  height: 100px;  /* adjust based on content */
+  box-shadow: #10e4da 0px 12px 20px -10px;
+  padding: 10px 20px; /* spacing inside */
+}
+
+/* Logo box with ribbon */
+.logo-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.logo {
+  height: 150px;
+  margin-right: 10px;
+  margin-top: -5%;
+}
+
+
+.ribbon {
+  position: absolute;
+  left: -1%;  /* adjust based on your ribbon PNG */
+  top: -9%;
+  height: 170px;
+  z-index: -2; /* behind text */
+}
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+.name {
+  font-family: 'Sail', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-left: 15px;
+  margin-top:-5%;
+
+}
+/* Gold opening on top-right */
+.gold {
+  position: absolute;
+  top: -1px;
+  right: 30px;
+  height: 150px; 
+}
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+   color: aliceblue;
+
+gap: 20px;
+}
+.navbar-links li { 
+  align-items: center;
+  justify-content: center;
+    font-size: 18px;
+  font-family: "Sigmar One", sans-serif;
+  font-weight: bold;
+  
+  margin-left: -110%;
+  margin-right:110% ;
+}
+.navbar-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+ 
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar-links li a:hover {
+
+  color: #fb9e09;
+  padding: 5px 10px;
+  border-radius: 10%;
+}
