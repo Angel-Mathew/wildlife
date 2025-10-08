@@ -2,7 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
-
+import Body from './components/body';
+import Footer from './components/Footer'; // Adjust the path if your Footer.jsx is in a different foldera
 // Example components for your routes
 {/* You can replace these with your actual components */}
 import Home from './pages/Home';
@@ -22,7 +23,7 @@ const App = () => {
         <Route path="/sightings" element={<Sightings />} />
         <Route path="/my-journey" element={<MyJourney />} />
       </Routes>
-      {/* <Footer /> */}
+       <Footer /> 
     </Router>
   );
 };

@@ -1,6 +1,7 @@
+
 /* Main content area */
 .main_image {
- width: 101.5%;
+ width: 101%;
   height: auto;
   margin-top: 5%; /* to avoid being hidden under the fixed header */
  margin-left: -1%;
@@ -82,3 +83,133 @@
   padding: 20px;
   border-radius: 8px;
 }
+/*categories section*/
+.label-container2 {
+  position: relative;
+  width: 280px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.label2 {
+  width: 100%;
+  height: auto;
+  margin-top: -10%;
+  z-index: 1;
+  display: block;
+  margin-left: -170%;
+}
+.label-text2 {
+  position: absolute;
+  top: 205px;
+  left: -125%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+.rabbit {
+  position: absolute;
+  top: 9%;     /* adjust vertically */
+  left: -115%;   /* adjust horizontally */
+  width: 100%;  /* scale as needed */
+  height: auto;
+  z-index: 3;   /* above the label image */
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px); /* fixed size grid cells */
+  grid-template-rows: repeat(2, 210px);
+  gap: 0;
+  justify-items: center;
+  margin-top: -10%;
+  margin-left: 25%;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+}
+
+.prints {
+  width: 200%;
+  height: 200%;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+  
+.item:hover .prints {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.name1 {
+  position: absolute;
+  top: 115%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+.name2 {
+  position: absolute;
+  top: 122%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+.name3 {
+  position: absolute;
+  top: 110%;
+  left: 99%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+.name4 {
+  position: absolute;
+  top: 110%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+
+
+/* footer */
+
+.design {
+  position: relative;
+  width: 100%;        /* same width as footer */
+  margin-left: 0;     /* reset */
+  display: flex;
+  justify-content: center; /* center animals */
+  
+}
+.animals {
+  gap: 5px;
+  width: 800%;
+}
+
