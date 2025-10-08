@@ -27,7 +27,7 @@ const Categories = () => {
                   key={creature.id}
                   name={creature.name}
                   image={creature.image}
-                  // onClick={() => handleCardClick(creature)} // Still here for future pop-up logic
+                   onClick={() => handleCardClick(creature)} //pop-up screen
                 />
               ))}
             </div>
