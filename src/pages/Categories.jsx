@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import livingbeingdata from '../assets/data/livingbeing.js'; // Adjust the path if your data file is in a different folder
+import livingbeingdata from '../assets/data/livingbeing.js';;; // Adjust the path if your data file is in a different folder
 import './Categories.css'; // Assuming you'll create a CSS file for styling
-import Navbar from '../assets/components/Navbar.jsx'; // Adjust the path if your Navbar.jsx is in a different folder
+import Navbar from '../components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
  /*the card component in categories*/
 
 const CategoryCard = ({ name, image, onClick }) => {

@@ -5,249 +5,255 @@ const livingbeingdata = {
         {
             "id":"horse",
             "name":"Horse",
-            "image":"/assets/animals/horse.png",
+            "image":"src/assets/animals/horse.png",
             "details_api_endpoint":"/api/livingbeing/horse"
         },
         {
             "id":"tiger",
             "name":"Tiger",
-            "image":"/assets/animals/tiger.png",
+            "image":"src/assets/animals/tiger.png",
             "details_api_endpoint":"/api/livingbeing/tiger"
         },
         {
             "id":"elephant",
             "name":"Elephant",
-            "image":"/assets/animals/elephant.png",
+            "image":"src/assets/animals/elephant.png",
             "details_api_endpoint":"/api/livingbeing/elephant"
         },
         {
             "id":"rabbit",
             "name":"Rabbit",
-            "image":"/assets/animals/rabbit.png",
+            "image":"src/assets/animals/rabbit.png",
             "details_api_endpoint":"/api/livingbeing/rabbit"
         },
         {
             "id":"dog",
             "name":"Dog",   
-            "image":"/assets/animals/dog.png",
+            "image":"src/assets/animals/dog.png",
             "details_api_endpoint":"/api/livingbeing/dog"
+        },
+        {
+        "id":"cat",
+        "name":"Cat",
+        "image":"src/assets/animals/cat.png",
+        "details_api_endpoint":"/api/livingbeing/cat"
         },
         {
         "id":" rhinoceros",
         "name":"Rhinoceros",
-        "image":"/assets/animals/rhinoceros.png",
+        "image":"src/assets/animals/rhinoceros.png",
         "details_api_endpoint":"/api/livingbeing/rhinoceros"
      },
      {
         "id":"markhor",
         "name":"Markhor",
-        "image":"/assets/animals/markhor.png",  
+        "image":"src/assets/animals/markhor.png",  
         "details_api_endpoint":"/api/livingbeing/markhor"
      },
      {
         "id":"arabian_oryx",
         "name":"Arabian Oryx",
-        "image":"/assets/animals/arabian_oryx.png",  
+        "image":"src/assets/animals/arabian_oryx.png",  
         "details_api_endpoint":"/api/livingbeing/arabian_oryx"
      },
      {
         "id":"camel",
         "name":"Camel",
-        "image":"/assets/animals/camel.png",  
+        "image":"src/assets/animals/camel.png",  
         "details_api_endpoint":"/api/livingbeing/camel"
      },
     {
         "id":"kangaroo",
         "name":"Kangaroo",
-        "image":"/assets/animals/kangaroo.png",  
+        "image":"src/assets/animals/kangaroo.png",  
         "details_api_endpoint":"/api/livingbeing/kangaroo"
     },
     {
         "id":"redpanda",
         "name":"Red panda", 
-        "image":"/assets/animals/redpanda.png",
+        "image":"src/assets/animals/redpanda.png",
         "details_api_endpoint":"/api/livingbeing/redpanda"
     },
     {"id":"meerkat",
      "name":"Meerkat", 
-     "image":"/assets/animals/meerkat.png",
+     "image":"src/assets/animals/meerkat.png",
     "details_api_endpoint":"/api/livingbeing/meerkat"
     },
    
     {"id":"capybara",
      "name":"Capybara", 
-     "image":"/assets/animals/capybara.png",
+     "image":"src/assets/animals/capybara.png",
      "details_api_endpoint":"/api/livingbeing/capybara"
     },
     {"id":"sloth",
      "name":"Sloth", 
-     "image":"/assets/animals/sloth.png",
+     "image":"src/assets/animals/sloth.png",
      "details_api_endpoint":"/api/livingbeing/sloth"
     },
     {"id":"koala",
      "name":"Koala", 
-     "image":"/assets/animals/koala.png",
+     "image":"src/assets/animals/koala.png",
      "details_api_endpoint":"/api/livingbeing/koala"
     },
     {"id":"giraffe",
      "name":"Giraffe", 
-     "image":"/assets/animals/giraffe.png", 
+     "image":"src/assets/animals/giraffe.png", 
       "details_api_endpoint":"/api/livingbeing/giraffe"
     },
     {"id":"zebra",
      "name":"Zebra", 
-     "image":"/assets/animals/zebra.png",
+     "image":"src/assets/animals/zebra.png",
      "details_api_endpoint":"/api/livingbeing/zebra"
     },
 
     {"id":"lion",
      "name":"Lion",  
-     "image":"/assets/animals/lion.png",
+     "image":"src/assets/animals/lion.png",
       "details_api_endpoint":"/api/livingbeing/lion"
     },
   {"id":"cow",
    "name":"Cow",  
-   "image":"/assets/animals/cow.png",
+   "image":"src/assets/animals/cow.png",
    "details_api_endpoint":"/api/livingbeing/cow"
   },
   {"id":"sheep",    
     "name":"Sheep",
-    "image":"/assets/animals/sheep.png",
+    "image":"src/assets/animals/sheep.png",
     "details_api_endpoint":"/api/livingbeing/sheep"
     },
   {"id":"Cougar",
     "name":"Cougar",
-    "image":"/assets/animals/cougar.png",
+    "image":"src/assets/animals/cougar.png",
     "details_api_endpoint":"/api/livingbeing/cougar"
   },
   {
     "id":"coyote",
     "name":"Coyote",
-    "image":"/assets/animals/coyote.png",
+    "image":"src/assets/animals/coyote.png",
     "details_api_endpoint":"/api/livingbeing/coyote"
   },
    {
     "id":"Caracal",
     "name":"Caracal",
-    "image":"/assets/animals/caracal.png",
+    "image":"src/assets/animals/caracal.png",
     "details_api_endpoint":"/api/livingbeing/caracal"
   },
   {
     "id":"cheetah",
     "name":"Cheetah",
-    "image":"/assets/animals/cheetah.png",
+    "image":"src/assets/animals/cheetah.png",
     "details_api_endpoint":"/api/livingbeing/cheetah"
   },
   {
     "id":"jaguar",
     "name":"Jaguar",
-    "image":"/assets/animals/jaguar.png",
+    "image":"src/assets/animals/jaguar.png",
     "details_api_endpoint":"/api/livingbeing/jaguar"
 },
   {
     "id":"chimpanzee",
     "name":"Chimpanzee",
-    "image":"/assets/animals/chimpanzee.png",
+    "image":"src/assets/animals/chimpanzee.png",
     "details_api_endpoint":"/api/livingbeing/chimpanzee"
   },
   {"id":"wolf",
 "name":"Wolf",  
-"image":"/assets/animals/wolf.png", 
+"image":"src/assets/animals/wolf.png", 
 "details_api_endpoint":"/api/livingbeing/wolf"
 },
   {
     "id":"beaver",
     "name":"Beaver",
-    "image":"/assets/animals/beaver.png",
+    "image":"src/assets/animals/beaver.png",
     "details_api_endpoint":"/api/livingbeing/beaver"
   },
  
   {
     "id":"Armadillo",
     "name":"Armadillo",
-    "image":"/assets/animals/armadillo.png",
+    "image":"src/assets/animals/armadillo.png",
     "details_api_endpoint":"/api/livingbeing/armadillo"
 },
 
 {
     "id":"sika deer",
     "name":"Sika Deer",
-    "image":"/assets/animals/sika_deer.png",
+    "image":"src/assets/animals/sikadeer.png",
     "details_api_endpoint":"/api/livingbeing/sika_deer"   
 },
 
 {"id":"honey badger",
 "name":"Honey Badger",  
-"image":"/assets/animals/honey_badger.png"
+"image":"src/assets/animals/honey_badger.png"
 },
 {"id":"The Carabao",
 "name":"The Carabao",  
-"image":"/assets/animals/carabao.png",
+"image":"src/assets/animals/carabao.png",
 "details_api_endpoint":"/api/livingbeing/carabao"       
 },
 {"id":"squirrel",
 "name":"Squirrel",  
-"image":"/assets/animals/squirrel.png",
+"image":"src/assets/animals/squirrel.png",
 "details_api_endpoint":"/api/livingbeing/squirrel"       
 },
 {"id":"otter",
 "name":"Otter",  
-"image":"/assets/animals/otter.png",
+"image":"src/assets/animals/otter.png",
 "details_api_endpoint":"/api/livingbeing/otter"       
 },
 {"id":"suger glider",
 "name":"Sugar Glider",  
-"image":"/assets/animals/sugar_glider.png",
+"image":"src/assets/animals/sugar_glider.png",
 "details_api_endpoint":"/api/livingbeing/sugar_glider"       
 },
 {"id":"sealion",
 "name":"Sea Lion",  
-"image":"/assets/animals/sealion.png",
+"image":"src/assets/animals/sealion.png",
 "details_api_endpoint":"/api/livingbeing/sealion"
 },
 {"id":"bat",
 "name":"Bat",  
-"image":"/assets/animals/bat.png",
+"image":"src/assets/animals/bat.png",
 "details_api_endpoint":"/api/livingbeing/bat"
 },
 {"id":"frog",
 "name":"Frog",  
-"image":"/assets/animals/frog.png",
+"image":"src/assets/animals/frog.png",
 "details_api_endpoint":"/api/livingbeing/frog"
 },
 {"id":"dolphin",
 "name":"Dolphin",  
-"image":"/assets/animals/dolphin.png",
+"image":"src/assets/animals/dolphin.png",
 "details_api_endpoint":"/api/livingbeing/dolphin"
 },
 /*-------------------------------------------------------------------------------------------*/
 {"id":"grasshopper",
 "name":"Grasshopper",  
-"image":"/assets/animals/grasshopper.png",
+"image":"src/assets/animals/grasshopper.png",
 "details_api_endpoint":"/api/livingbeing/grasshopper"},
 {"id":"spider",
 "name":"Spider",  
-"image":"/assets/animals/spider.png",
+"image":"src/assets/animals/spider.png",
 "details_api_endpoint":"/api/livingbeing/spider"    
 },
 {"id":"snail",
 "name":"Snail",     
-"image":"/assets/animals/snail.png",
+"image":"src/assets/animals/snail.png",
 "details_api_endpoint":"/api/livingbeing/snail"
 },
 {"id":"butterfly",
 "name":"Butterfly",  
-"image":"/assets/animals/butterfly.png",
+"image":"src/assets/animals/butterfly.png",
 "details_api_endpoint":"/api/livingbeing/butterfly"
 },
 {"id":"honeybee",
 "name":"Honeybee",  
-"image":"/assets/animals/honeybee.png",
+"image":"src/assets/animals/honeybee.png",
 "details_api_endpoint":"/api/livingbeing/honeybee"
 },
 {"id":"ladybug",
 "name":"Ladybug",  
-"image":"/assets/animals/ladybug.png",
+"image":"src/assets/animals/ladybug.png",
 "details_api_endpoint":"/api/livingbeing/ladybug"
 }
 ],
@@ -259,80 +265,80 @@ const livingbeingdata = {
 {
     "id":"crocodile",
     "name":"Crocodile",  
-    "image":"/assets/reptiles/crocodile.png",
-    "details_api_endpoint":"/api/livingbeing/crocodile"
+    "image":"src/assets/reptiles/crocodile.png",
+    "details_api_endpoint":"src/api/livingbeing/crocodile"
 },
 {
     "id":"alligator",   
     "name":"Alligator",
-    "image":"/assets/reptiles/alligator.png",
-    "details_api_endpoint":"/api/livingbeing/alligator"
+    "image":"src/assets/reptiles/alligator.png",
+    "details_api_endpoint":"src/api/livingbeing/alligator"
 },
 {
     "id":"gecko",
     "name":"Gecko", 
-    "image":"/assets/reptiles/gecko.png",
-    "details_api_endpoint":"/api/livingbeing/gecko"
+    "image":"src/assets/reptiles/gecko.png",
+    "details_api_endpoint":"src/api/livingbeing/gecko"
 },
 {
     "id":"iguana",
     "name":"Iguana",    
-    "image":"/assets/reptiles/iguana.png",
+    "image":"src/assets/reptiles/iguana.png",
     "details_api_endpoint":"/api/livingbeing/iguana"
 },
 {"id":"chameleon",
 "name":"Chameleon",  
-"image":"/assets/reptiles/chameleon.png",
+"image":"src/assets/reptiles/chameleon.png",
 "details_api_endpoint":"/api/livingbeing/chameleon"
 },
 {"id":"Monitor lizards",
 "name":"Monitor lizards",  
-"image":"/assets/reptiles/monitor_lizards.png",
+"image":"src/assets/reptiles/monitor_lizards.png",
 "details_api_endpoint":"/api/livingbeing/monitor_lizards"
 },
 {"id":"python",
 "name":"Python",  
-"image":"/assets/reptiles/python.png",      
+"image":"src/assets/reptiles/python.png",      
 "details_api_endpoint":"/api/livingbeing/python"
 },
 {"id":"cobra",
 "name":"Cobra",  
-"image":"/assets/reptiles/cobra.png",       
+"image":"src/assets/reptiles/cobra.png",       
 "details_api_endpoint":"/api/livingbeing/cobra"
 },
 {"id":"tortoise",
 "name":"Tortoise",  
-"image":"/assets/reptiles/tortoise.png",    
+"image":"src/assets/reptiles/tortoise.png",    
 "details_api_endpoint":"/api/livingbeing/tortoise"
 },
 {"id":"turtle", 
 "name":"Turtle",
-"image":"/assets/reptiles/turtle.png",
+"image":"src/assets/reptiles/turtle.png",
 "details_api_endpoint":"/api/livingbeing/turtle"
 },
 {"id":"lizard",
 "name":"Lizard",  
-"image":"/assets/reptiles/lizard.png",
+"image":"src/assets/reptiles/lizard.png",
 "details_api_endpoint":"/api/livingbeing/lizard"
 },
 {"id":"skink",
 "name":"Skink",  
-"image":"/assets/reptiles/skink.png",
+"image":"src/assets/reptiles/skink.png",
 "details_api_endpoint":"/api/livingbeing/skink"
 },
 {"id":"anole",
 "name":"Anole",  
-"image":"/assets/reptiles/anole.png",
+"image":"src/assets/reptiles/anole.png",
 "details_api_endpoint":"/api/livingbeing/anole"
 },
 {"id":"gila monster",
 "name":"Gila Monster",  
-"image":"/assets/reptiles/gila_monster.png",
+"image":"src/assets/reptiles/gila_monster.png",
 "details_api_endpoint":"/api/livingbeing/gila_monster"
 },
 {"id":"tuatara",
 "name":"Tuatara",  
-"image":"/assets/reptiles/tuatara.png",
+"image":"src/assets/reptiles/tuatara.png",
 "details_api_endpoint":"/api/livingbeing/tuatara"
 }
 ],
@@ -343,142 +349,142 @@ const livingbeingdata = {
     {
         "id":"parrot",
         "name":"Parrot",  
-        "image":"/assets/birds/parrot.png",
+        "image":"src/assets/birds/parrot.png",
         "details_api_endpoint":"/api/livingbeing/parrot"
     },
     {
         "id":"eagle",
         "name":"Eagle",
-        "image":"/assets/birds/eagle.png",
+        "image":"src/assets/birds/eagle.png",
         "details_api_endpoint":"/api/livingbeing/eagle"
     },
     {
         "id":"owl",
         "name":"Owl",  
-        "image":"/assets/birds/owl.png",    
+        "image":"src/assets/birds/owl.png",    
         "details_api_endpoint":"/api/livingbeing/owl"
     
     },
     {
         "id":"penguin",
         "name":"Penguin",  
-        "image":"/assets/birds/penguin.png",    
+        "image":"src/assets/birds/penguin.png",    
         "details_api_endpoint":"/api/livingbeing/penguin"
     },
     {
         "id":"peacock",
         "name":"Peacock",   
-        "image":"/assets/birds/peacock.png",
+        "image":"src/assets/birds/peacock.png",
         "details_api_endpoint":"/api/livingbeing/peacock"
 
     },
     {
         "id":"flamingo",
         "name":"Flamingo",  
-        "image":"/assets/birds/flamingo.png",
+        "image":"src/assets/birds/flamingo.png",
         "details_api_endpoint":"/api/livingbeing/flamingo"
     },
     {
         "id":"woodpecker",
         "name":"Woodpecker",  
-        "image":"/assets/birds/woodpecker.png",
+        "image":"src/assets/birds/woodpecker.png",
     },
     {"id":"canary",
     "name":"Canary",  
-    "image":"/assets/birds/canary.png", 
+    "image":"src/assets/birds/canary.png", 
     "details_api_endpoint":"/api/livingbeing/canary"
     },
     {"id":"swan",   
     "name":"Swan",
-    "image":"/assets/birds/swan.png",
+    "image":"src/assets/birds/swan.png",
     "details_api_endpoint":"/api/livingbeing/swan"  
     },
     {"id":"toucan",
     "name":"Toucan",  
-    "image":"/assets/birds/toucan.png", 
+    "image":"src/assets/birds/toucan.png", 
     "details_api_endpoint":"/api/livingbeing/toucan"
     },
     {"id":"hummingbird",
     "name":"Hummingbird",  
-    "image":"/assets/birds/hummingbird.png",
+    "image":"src/assets/birds/hummingbird.png",
     "details_api_endpoint":"/api/livingbeing/hummingbird"
     },
     {
     "id":"vulture",
     "name":"Vulture",  
-    "image":"/assets/birds/vulture.png",
+    "image":"src/assets/birds/vulture.png",
     "details_api_endpoint":"/api/livingbeing/vulture"
     },
     {
     "id":"robin",
     "name":"Robin",  
-    "image":"/assets/birds/robin.png",
+    "image":"src/assets/birds/robin.png",
     "details_api_endpoint":"/api/livingbeing/robin"
     },
    
     {
         "id":"hawk",
         "name":"Hawk",
-        "image":"/assets/birds/hawk.png",
+        "image":"src/assets/birds/hawk.png",
         "details_api_endpoint":"/api/livingbeing/hawk"
 },
 {    "id":"albatross",
     "name":"Albatross",  
-    "image":"/assets/birds/albatross.png",
+    "image":"src/assets/birds/albatross.png",
     "details_api_endpoint":"/api/livingbeing/albatross"
 },
 
 {    "id":"cockatoo",
     "name":"Cockatoo",
-    "image":"/assets/birds/cockatoo.png",
+    "image":"src/assets/birds/cockatoo.png",
     "details_api_endpoint":"/api/livingbeing/cockatoo"
 },
 {
     "id":"macaw",
     "name":"Macaw",  
-    "image":"/assets/birds/macaw.png",
+    "image":"src/assets/birds/macaw.png",
     "details_api_endpoint":"/api/livingbeing/macaw"
 },
 {
     "id":"hornbill",
     "name":"Hornbill",  
-    "image":"/assets/birds/hornbill.png",
+    "image":"src/assets/birds/hornbill.png",
     "details_api_endpoint":"/api/livingbeing/hornbill"
 },
 {"id":"ducks",
 "name":"Ducks",  
-"image":"/assets/birds/ducks.png",
+"image":"src/assets/birds/duck.png",
 "details_api_endpoint":"/api/livingbeing/ducks"
 },
 {"id":"falcon",
 "name":"Falcon",  
-"image":"/assets/birds/falcon.png",
+"image":"src/assets/birds/falcon.png",
 "details_api_endpoint":"/api/livingbeing/falcon"
 },
 {"id":"hens",
 "name":"Hens",  
-"image":"/assets/birds/hens.png",
+"image":"src/assets/birds/hen.png",
 "details_api_endpoint":"/api/livingbeing/hens"
 },
 {"id":"cuckoo",
 "name":"Cuckoo",  
-"image":"/assets/birds/cuckoo.png",
+"image":"src/assets/birds/cuckoo.png",
 "details_api_endpoint":"/api/livingbeing/cuckoo"
 },
 {"id":"pheasant",
 "name":"Pheasant",  
-"image":"/assets/birds/pheasant.png",
+"image":"src/assets/birds/pheasant.png",
 "details_api_endpoint":"/api/livingbeing/pheasant"
 },
 {"id":"puffin",
 "name":"Puffin",  
-"image":"/assets/birds/puffin.png",
+"image":"src/assets/birds/puffin.png",
 "details_api_endpoint":"/api/livingbeing/puffin"
 },
 {
     "id":"spoonbill",
     "name":"Spoonbill",  
-    "image":"/assets/birds/spoonbill.png",
+    "image":"src/assets/birds/spoonbill.png",
     "details_api_endpoint":"/api/livingbeing/spoonbill"
 },
 
@@ -486,66 +492,66 @@ const livingbeingdata = {
 {
 "id":"ostrich",
 "name":"Ostrich",  
-"image":"/assets/birds/ostrich.png",
+"image":"src/assets/birds/ostrich.png",
 "details_api_endpoint":"/api/livingbeing/ostrich"
 },
 {
     "id":"emu",
     "name":"Emu",  
-    "image":"/assets/birds/emu.png",
+    "image":"src/assets/birds/emu.png",
     "details_api_endpoint":"/api/livingbeing/emu"
 },
 {
    "id":"chukar_partridge",
    "name":"Chukar Partridge",  
-   "image":"/assets/birds/chukar_partridge.png",
+   "image":"src/assets/birds/chukar_partridge.png",
    "details_api_endpoint":"/api/livingbeing/chukar_partridge"
 },
 {
     "id":"philippine_eagle",
     "name":"Philippine Eagle",  
-    "image":"/assets/birds/philippine_eagle.png",
+    "image":"src/assets/birds/philippine_eagle.png",
     "details_api_endpoint":"/api/livingbeing/philippine_eagle"
 },
 {
     "id":"hoopoe",
     "name":"Hoopoe",  
-    "image":"/assets/birds/hoopoe.png",
+    "image":"src/assets/birds/hoopoe.png",
     "details_api_endpoint":"/api/livingbeing/hoopoe"    
 },
 {
 "id":"lapwing",
 "name":"Lapwing",
-"image":"/assets/birds/lapwing.png",
+"image":"src/assets/birds/lapwing.png",
 "details_api_endpoint":"/api/livingbeing/lapwing"
 },
 
 {
     "id":"kingfisher",
     "name":"Kingfisher",
-    "image":"/assets/birds/kingfisher.png",
+    "image":"src/assets/birds/kingfisher.png",
     "details_api_endpoint":"/api/livingbeing/kingfisher"
 },
 {
     "id":"blue_jay",
     "name":"Blue Jay",
-    "image":"/assets/birds/blue_jay.png",
+    "image":"src/assets/birds/blue_jay.png",
     "details_api_endpoint":"/api/livingbeing/blue_jay"
 },
 {"id":"black_drongo",
 "name":"Black Drongo",
-"image":"/assets/birds/black_drongo.png",
+"image":"src/assets/birds/black_drongo.png",
 "details_api_endpoint":"/api/livingbeing/black_drongo"  
 },
 
 {"id":"crow",
 "name":"Crow",          
-"image":"/assets/birds/crow.png",
+"image":"src/assets/birds/crow.png",
 "details_api_endpoint":"/api/livingbeing/crow"
 },
 {"id":"dove",
 "name":"Dove",          
-"image":"/assets/birds/dove.png",
+"image":"src/assets/birds/dove.png",
 "details_api_endpoint":"/api/livingbeing/dove"
 }
 ],
@@ -556,110 +562,110 @@ const livingbeingdata = {
     {
         "id":"seahorse",
         "name":"Seahorse",  
-        "image":"/assets/fishes/seahorse.png",    
+        "image":"src/assets/fishes/seahorse.png",    
         "details_api_endpoint":"/api/livingbeing/seahorse"
     },
     {
         "id":"clownfish",
         "name":"Clownfish",  
-        "image":"/assets/fishes/clownfish.png", 
+        "image":"src/assets/fishes/clownfish.png", 
         "details_api_endpoint":"/api/livingbeing/clownfish"
     
     },
     {
         "id":"queen_angelfish",
         "name":"Queen Angelfish",
-        "image":"/assets/fishes/queen_angelfish.png",
+        "image":"src/assets/fishes/queen_angelfish.png",
         "details_api_endpoint":"/api/livingbeing/queen_angelfish"
     },
     {
     "id":"pufferfish",
     "name":"Pufferfish",  
-    "image":"/assets/fishes/pufferfish.png",    
+    "image":"src/assets/fishes/pufferfish.png",    
     "details_api_endpoint":"/api/livingbeing/pufferfish"
     },
     {
     "id":"shark",
     "name":"Shark",
-    "image":"/assets/fishes/shark.png",
+    "image":"src/assets/fishes/shark.png",
     "details_api_endpoint":"/api/livingbeing/shark"
     },
     {
     "id":"stingray",
     "name":"Stingray",  
-    "image":"/assets/fishes/stingray.png",
+    "image":"src/assets/fishes/stingray.png",
     "details_api_endpoint":"/api/livingbeing/stingray"
     },
     {
     "id":"grouper",
     "name":"Grouper",  
-    "image":"/assets/fishes/grouper.png",   
+    "image":"src/assets/fishes/grouper.png",   
     "details_api_endpoint":"/api/livingbeing/grouper"
     },
     {
     "id":"lionfish",
     "name":"Lionfish",
-    "image":"/assets/fishes/lionfish.png",
+    "image":"src/assets/fishes/lionfish.png",
     "details_api_endpoint":"/api/livingbeing/lionfish"
 },
 {
     "id":"swordfish",
     "name":"Swordfish",
-    "image":"/assets/fishes/swordfish.png",
+    "image":"src/assets/fishes/swordfish.png",
     "details_api_endpoint":"/api/livingbeing/swordfish"
 },
 {
     "id":"Siamese_fighting_fish",
     "name":"Siamese Fighting Fish",
-    "image":"/assets/fishes/Siamese_fighting_fish.png",
+    "image":"src/assets/fishes/Siamese_fighting_fish.png",
     "details_api_endpoint":"/api/livingbeing/Siamese_fighting_fish"
 
 },
 {
     "id":"goldfish",
     "name":"Goldfish",
-    "image":"/assets/fishes/goldfish.png",
+    "image":"src/assets/fishes/goldfish.png",
     "details_api_endpoint":"/api/livingbeing/goldfish"
 },
 {
     "id":"electric_eel",
     "name":"Electric Eel",
-    "image":"/assets/fishes/electric_eel.png",
+    "image":"src/assets/fishes/electric_eel.png",
     "details_api_endpoint":"/api/livingbeing/electric_eel"
 },
 {
     "id":"catfish",
     "name":"Catfish",
-    "image":"/assets/fishes/catfish.png",
+    "image":"src/assets/fishes/catfish.png",
     "details_api_endpoint":"/api/livingbeing/catfish"
 },
 {
     "id":"skate_fish",
     "name":"Skate Fish",
-    "image":"/assets/fishes/skate_fish.png",
+    "image":"src/assets/fishes/skate_fish.png",
     "details_api_endpoint":"/api/livingbeing/skate_fish"
 },
 {
 "id":"blue_tang",
 "name":"Blue Tang",
-"image":"/assets/fishes/blue_tang.png",
+"image":"src/assets/fishes/blue_tang.png",
 "details_api_endpoint":"/api/livingbeing/blue_tang"
 },
 
 {"id":"butterfly_fish",
 "name":"Butterfly Fish",
-"image":"/assets/fishes/butterfly_fish.png",
+"image":"src/assets/fishes/butterfly_fish.png",
 "details_api_endpoint":"/api/livingbeing/butterfly_fish"
 },
 {"id":"piranha",
 "name":"Piranha",
-"image":"/assets/fishes/piranha.png",
+"image":"src/assets/fishes/piranha.png",
 "details_api_endpoint":"/api/livingbeing/piranha"   
 
 },
 {"id":"barracuda",
 "name":"Barracuda",
-"image":"/assets/fishes/barracuda.png",
+"image":"src/assets/fishes/barracuda.png",
 "details_api_endpoint":"/api/livingbeing/barracuda"     
 }
 ]
