@@ -23,7 +23,7 @@ const Popup = ({ livingbeing, onClose, categoryBackgrounds }) => {
     } else if (livingbeing.name === "Otter") {
         setDetails("Otters are carnivorous mammals in the subfamily Lutrinae. The 13 extant otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates.");
     } else {
-        setDetails(`This is the detailed information for the ${livingbeing.name}. Currently showing placeholder data. Its API endpoint is: ${livingbeing.details_api_endpoint}.`);
+        setDetails(`  ${livingbeing.description}.`);
     }
     // --- End Placeholder data ---
 

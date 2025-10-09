@@ -26,49 +26,55 @@ const livingbeingdata = {
             "image":"src/assets/animals/elephant.png",
             "details_api_endpoint":"/api/livingbeing/elephant",
             "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png",
-             "description":""
+             "description":"Elephants are the largest animals, with male African elephants reaching 13ft tall and 6800kg. The three species can be identified by their ears. Their trunks contain 150,000 muscle units and can hold 8 litres of water. Tusks are enlarged incisor teeth that grow from age 2 then continue throughout life. Elephants have thick skin, communicate through vibration, and calves can stand within 20minutes of birth. They never forget."
         },
         {
             "id":"rabbit",
             "name":"Rabbit",
             "image":"src/assets/animals/rabbit.png",
             "details_api_endpoint":"/api/livingbeing/rabbit",
-            "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png",
+            "description":"Rabbits are small,fluffy  herbivores in the family Leporidae,living 8-12years. They have short,ball like tails, wide set eyes for broad vision and large eats to detect predators. Their longer hind legs enable quick hopping. Rabbits eat soft vegetables and inhabit forests, meadows, grasslands, deserts, tundra, and wetlands. They're most active during morning and evening when they forage for food."
         },
         {
             "id":"dog",
             "name":"Dog",   
             "image":"src/assets/animals/dog.png",
             "details_api_endpoint":"/api/livingbeing/dog",
-            "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png",
+             "description":"The dog (Canis familiaris) is a domesticated descendant of the gray wolf. Dogs' senses include vision, hearing, smell, taste, touch, and magnetoreception.Dogs communicate through eye gaze,facial expression,vocalization,body posture."
         },
         {
         "id":"cat",
         "name":"Cat",
         "image":"src/assets/animals/cat.png",
         "details_api_endpoint":"/api/livingbeing/cat",
-        "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
+        "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png",
+         "description":"The cat (Felis catus) is a small domesticated carnivore kept as a pet or working animal. It has retractable claws, sharp teeth, excellent night vision, and hunts small prey like mice and rats. Valued for its ability to kill vermin, cats communicate through meowing, purring, hissing, and body language, and can hear high-frequency sounds inaudible to humans. They are intelligent, adaptable, and solitary hunters."
         },
         {
         "id":" rhinoceros",
         "name":"Rhinoceros",
         "image":"src/assets/animals/rhinoceros.png",
         "details_api_endpoint":"/api/livingbeing/rhinoceros",
-        "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
+        "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png",
+         "description":"Rhinos are ancient mammals whose population crashed from 500,000 (1900) to 27,000 today. Conservation efforts are working—three of five species are now increasing.Rhino horn is used in traditional Asian medicine, believed to treat various ailments, and as a status symbol of wealth, driving poaching. Horns grow continuously from birth throughout their lives."
      },
      {
         "id":"markhor",
         "name":"Markhor",
         "image":"src/assets/animals/markhor.png",  
         "details_api_endpoint":"/api/livingbeing/markhor",
-         "bg_popupscreen":"src/assets/bg/animals_popup/mountain.png"
+         "bg_popupscreen":"src/assets/bg/animals_popup/mountain.png",
+         "description":"Markhors are the largest wild goats, with broad hooves and striking spiral horns reaching 5 feet in males and 2 feet in females. They have reddish-gray coats with dark back stripes. Males sport thick beards, manes, and leg tufts, while females have shorter beards.Females live in herds; males join only during breeding season. Most active at dawn and dusk, their wide hooves aid climbing in mountainous terrain. They migrate to higher altitudes in spring and summer and descend in fall to graze at the tree line."
      },
      {
         "id":"arabian_oryx",
         "name":"Arabian Oryx",
         "image":"src/assets/animals/arabian_oryx.png",  
         "details_api_endpoint":"/api/livingbeing/arabian_oryx",
-        "bg_popupscreen":"src/assets/bg/animals_popup/mountain.png"
+        "bg_popupscreen":"src/assets/bg/animals_popup/mountain.png",
+        "description":"The Arabian oryx has a bright, white coat that reflects the sun’s harsh rays, while splayed hooves allow it to negotiate the sandy terrain more easily. It can survive for extended periods without a direct water source – because it obtains all the moisture it needs by eating desert plants – and is capable of travelling vast distances in search of new growth. Arabian oryx are active mainly around dawn and dusk, and tend to rest in the shade during the heat of the day. They dig with their hooves to create a bed of cooler sand in which to lie."
     
      },
      {
