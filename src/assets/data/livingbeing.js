@@ -6,262 +6,321 @@ const livingbeingdata = {
             "id":"horse",
             "name":"Horse",
             "image":"src/assets/animals/horse.png",
-            "details_api_endpoint":"/api/livingbeing/horse"
+            "details_api_endpoint":"/api/livingbeing/horse",
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/horse_home.png",
+            "description":"Horses are domesticated,one-toed mammals from the Equidae family inhabiting  grasslands,worldwide, with feral populations in Central Asia,the Americas,Europe and Africa.Foals stand and run shortly after birth; horses trains at ages two or four.They obligate nasal breathers,sleep standing and possess excellent hearing,speed and 360 dregree vision.These intelligent,social animals have a strong flight response and live 25-30 years."
+           
         },
         {
             "id":"tiger",
             "name":"Tiger",
             "image":"src/assets/animals/tiger.png",
-            "details_api_endpoint":"/api/livingbeing/tiger"
+            "details_api_endpoint":"/api/livingbeing/tiger",
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/tiger_home.png",
+             "description":"The tiger (Pantera tigris) is a large Asian cat with a muscular body, orange fur, and black vertical stripes. It inhabits forests from the Russian Far East to India and Southeast Asia and includes nine subspecies: Bengal, Malayan, Indochinese, South China, Siberian, Caspian, Javan, Bali and Sumatran. Tigers communicate with their ears, can survive a week on big deer and have existed for over 2 million years, but are now endangered."
+             
         },
         {
             "id":"elephant",
             "name":"Elephant",
             "image":"src/assets/animals/elephant.png",
-            "details_api_endpoint":"/api/livingbeing/elephant"
+            "details_api_endpoint":"/api/livingbeing/elephant",
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png",
+             "description":""
         },
         {
             "id":"rabbit",
             "name":"Rabbit",
             "image":"src/assets/animals/rabbit.png",
-            "details_api_endpoint":"/api/livingbeing/rabbit"
+            "details_api_endpoint":"/api/livingbeing/rabbit",
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
         },
         {
             "id":"dog",
             "name":"Dog",   
             "image":"src/assets/animals/dog.png",
-            "details_api_endpoint":"/api/livingbeing/dog"
+            "details_api_endpoint":"/api/livingbeing/dog",
+            "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
         },
         {
         "id":"cat",
         "name":"Cat",
         "image":"src/assets/animals/cat.png",
-        "details_api_endpoint":"/api/livingbeing/cat"
+        "details_api_endpoint":"/api/livingbeing/cat",
+        "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
         },
         {
         "id":" rhinoceros",
         "name":"Rhinoceros",
         "image":"src/assets/animals/rhinoceros.png",
-        "details_api_endpoint":"/api/livingbeing/rhinoceros"
+        "details_api_endpoint":"/api/livingbeing/rhinoceros",
+        "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
      },
      {
         "id":"markhor",
         "name":"Markhor",
         "image":"src/assets/animals/markhor.png",  
-        "details_api_endpoint":"/api/livingbeing/markhor"
+        "details_api_endpoint":"/api/livingbeing/markhor",
+         "bg_popupscreen":"src/assets/bg/animals_popup/mountain.png"
      },
      {
         "id":"arabian_oryx",
         "name":"Arabian Oryx",
         "image":"src/assets/animals/arabian_oryx.png",  
-        "details_api_endpoint":"/api/livingbeing/arabian_oryx"
+        "details_api_endpoint":"/api/livingbeing/arabian_oryx",
+        "bg_popupscreen":"src/assets/bg/animals_popup/mountain.png"
+    
      },
      {
         "id":"camel",
         "name":"Camel",
         "image":"src/assets/animals/camel.png",  
-        "details_api_endpoint":"/api/livingbeing/camel"
+        "details_api_endpoint":"/api/livingbeing/camel",
+         "bg_popupscreen":"src/assets/bg/animals_popupbg/camel's_home.png"
      },
     {
         "id":"kangaroo",
         "name":"Kangaroo",
         "image":"src/assets/animals/kangaroo.png",  
-        "details_api_endpoint":"/api/livingbeing/kangaroo"
+        "details_api_endpoint":"/api/livingbeing/kangaroo",
+        "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
     },
     {
         "id":"redpanda",
         "name":"Red panda", 
         "image":"src/assets/animals/redpanda.png",
-        "details_api_endpoint":"/api/livingbeing/redpanda"
+        "details_api_endpoint":"/api/livingbeing/redpanda",
+        "bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
     },
     {"id":"meerkat",
      "name":"Meerkat", 
      "image":"src/assets/animals/meerkat.png",
-    "details_api_endpoint":"/api/livingbeing/meerkat"
+    "details_api_endpoint":"/api/livingbeing/meerkat",
+    "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
     },
    
     {"id":"capybara",
      "name":"Capybara", 
      "image":"src/assets/animals/capybara.png",
-     "details_api_endpoint":"/api/livingbeing/capybara"
+     "details_api_endpoint":"/api/livingbeing/capybara",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
     },
     {"id":"sloth",
      "name":"Sloth", 
      "image":"src/assets/animals/sloth.png",
-     "details_api_endpoint":"/api/livingbeing/sloth"
+     "details_api_endpoint":"/api/livingbeing/sloth",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
     },
     {"id":"koala",
      "name":"Koala", 
      "image":"src/assets/animals/koala.png",
-     "details_api_endpoint":"/api/livingbeing/koala"
+     "details_api_endpoint":"/api/livingbeing/koala",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
     },
     {"id":"giraffe",
      "name":"Giraffe", 
      "image":"src/assets/animals/giraffe.png", 
-      "details_api_endpoint":"/api/livingbeing/giraffe"
+      "details_api_endpoint":"/api/livingbeing/giraffe",
+       "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
     },
     {"id":"zebra",
      "name":"Zebra", 
      "image":"src/assets/animals/zebra.png",
-     "details_api_endpoint":"/api/livingbeing/zebra"
+     "details_api_endpoint":"/api/livingbeing/zebra",
+      "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
     },
 
     {"id":"lion",
      "name":"Lion",  
      "image":"src/assets/animals/lion.png",
-      "details_api_endpoint":"/api/livingbeing/lion"
+      "details_api_endpoint":"/api/livingbeing/lion",
+       "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
     },
   {"id":"cow",
    "name":"Cow",  
    "image":"src/assets/animals/cow.png",
-   "details_api_endpoint":"/api/livingbeing/cow"
+   "details_api_endpoint":"/api/livingbeing/cow",
+   "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
   },
   {"id":"sheep",    
     "name":"Sheep",
     "image":"src/assets/animals/sheep.png",
-    "details_api_endpoint":"/api/livingbeing/sheep"
+    "details_api_endpoint":"/api/livingbeing/sheep",
+    "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
     },
   {"id":"Cougar",
     "name":"Cougar",
     "image":"src/assets/animals/cougar.png",
-    "details_api_endpoint":"/api/livingbeing/cougar"
+    "details_api_endpoint":"/api/livingbeing/cougar",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
   },
   {
     "id":"coyote",
     "name":"Coyote",
     "image":"src/assets/animals/coyote.png",
-    "details_api_endpoint":"/api/livingbeing/coyote"
+    "details_api_endpoint":"/api/livingbeing/coyote",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
   },
    {
     "id":"Caracal",
     "name":"Caracal",
     "image":"src/assets/animals/caracal.png",
-    "details_api_endpoint":"/api/livingbeing/caracal"
+    "details_api_endpoint":"/api/livingbeing/caracal",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
   },
   {
     "id":"cheetah",
     "name":"Cheetah",
     "image":"src/assets/animals/cheetah.png",
-    "details_api_endpoint":"/api/livingbeing/cheetah"
+    "details_api_endpoint":"/api/livingbeing/cheetah",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
   },
   {
     "id":"jaguar",
     "name":"Jaguar",
     "image":"src/assets/animals/jaguar.png",
-    "details_api_endpoint":"/api/livingbeing/jaguar"
+    "details_api_endpoint":"/api/livingbeing/jaguar",
+    "bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
 },
   {
     "id":"chimpanzee",
     "name":"Chimpanzee",
     "image":"src/assets/animals/chimpanzee.png",
-    "details_api_endpoint":"/api/livingbeing/chimpanzee"
+    "details_api_endpoint":"/api/livingbeing/chimpanzee",
+    "bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
   },
   {"id":"wolf",
 "name":"Wolf",  
 "image":"src/assets/animals/wolf.png", 
-"details_api_endpoint":"/api/livingbeing/wolf"
+"details_api_endpoint":"/api/livingbeing/wolf",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
 },
   {
     "id":"beaver",
     "name":"Beaver",
     "image":"src/assets/animals/beaver.png",
-    "details_api_endpoint":"/api/livingbeing/beaver"
+    "details_api_endpoint":"/api/livingbeing/beaver",
+     "bg_popupscreen":"src/assets/bg/animals_popupbg/b_o.png"    
+     
   },
  
   {
     "id":"Armadillo",
     "name":"Armadillo",
     "image":"src/assets/animals/armadillo.png",
-    "details_api_endpoint":"/api/livingbeing/armadillo"
+    "details_api_endpoint":"/api/livingbeing/armadillo",
+    "bg_popupscreen":"src/assets/bg/animals_popupbg/savannah.png"
+    
 },
 
 {
     "id":"sika deer",
     "name":"Sika Deer",
     "image":"src/assets/animals/sikadeer.png",
-    "details_api_endpoint":"/api/livingbeing/sika_deer"   
+    "details_api_endpoint":"/api/livingbeing/sika_deer" ,
+    "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"
 },
 
 {"id":"honey badger",
 "name":"Honey Badger",  
-"image":"src/assets/animals/honey_badger.png"
+"image":"src/assets/animals/honey_badger.png",
+ "detail_api_endpoint":"/api/livingbeing/honey_badger",
+ "bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
+
 },
 {"id":"The Carabao",
 "name":"The Carabao",  
 "image":"src/assets/animals/carabao.png",
-"details_api_endpoint":"/api/livingbeing/carabao"       
+"details_api_endpoint":"/api/livingbeing/carabao",
+   "bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"     
 },
 {"id":"squirrel",
 "name":"Squirrel",  
 "image":"src/assets/animals/squirrel.png",
-"details_api_endpoint":"/api/livingbeing/squirrel"       
+"details_api_endpoint":"/api/livingbeing/squirrel",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/grassland.png"      
 },
 {"id":"otter",
 "name":"Otter",  
 "image":"src/assets/animals/otter.png",
-"details_api_endpoint":"/api/livingbeing/otter"       
+"details_api_endpoint":"/api/livingbeing/otter", 
+ "bg_popupscreen":"src/assets/bg/animals_popupbg/b_o.png"         
 },
 {"id":"suger glider",
 "name":"Sugar Glider",  
 "image":"src/assets/animals/sugar_glider.png",
-"details_api_endpoint":"/api/livingbeing/sugar_glider"       
+"details_api_endpoint":"/api/livingbeing/sugar_glider",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"      
 },
 {"id":"sealion",
 "name":"Sea Lion",  
 "image":"src/assets/animals/sealion.png",
-"details_api_endpoint":"/api/livingbeing/sealion"
+"details_api_endpoint":"/api/livingbeing/sealion",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/ocean.png"
 },
 {"id":"bat",
 "name":"Bat",  
 "image":"src/assets/animals/bat.png",
-"details_api_endpoint":"/api/livingbeing/bat"
+"details_api_endpoint":"/api/livingbeing/bat",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
 },
 {"id":"frog",
 "name":"Frog",  
 "image":"src/assets/animals/frog.png",
-"details_api_endpoint":"/api/livingbeing/frog"
+"details_api_endpoint":"/api/livingbeing/frog",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"
 },
 {"id":"dolphin",
 "name":"Dolphin",  
 "image":"src/assets/animals/dolphin.png",
-"details_api_endpoint":"/api/livingbeing/dolphin"
+"details_api_endpoint":"/api/livingbeing/dolphin",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/ocean.png"
 },
 /*-------------------------------------------------------------------------------------------*/
 {"id":"grasshopper",
 "name":"Grasshopper",  
 "image":"src/assets/animals/grasshopper.png",
-"details_api_endpoint":"/api/livingbeing/grasshopper"},
+"details_api_endpoint":"/api/livingbeing/grasshopper",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png"},
 {"id":"spider",
 "name":"Spider",  
 "image":"src/assets/animals/spider.png",
-"details_api_endpoint":"/api/livingbeing/spider"    
+"details_api_endpoint":"/api/livingbeing/spider",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png",
+
 },
 {"id":"snail",
 "name":"Snail",     
 "image":"src/assets/animals/snail.png",
-"details_api_endpoint":"/api/livingbeing/snail"
+"details_api_endpoint":"/api/livingbeing/snail",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png" 
 },
 {"id":"butterfly",
 "name":"Butterfly",  
 "image":"src/assets/animals/butterfly.png",
-"details_api_endpoint":"/api/livingbeing/butterfly"
+"details_api_endpoint":"/api/livingbeing/butterfly",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png" 
 },
 {"id":"honeybee",
 "name":"Honeybee",  
 "image":"src/assets/animals/honeybee.png",
-"details_api_endpoint":"/api/livingbeing/honeybee"
+"details_api_endpoint":"/api/livingbeing/honeybee",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png" 
 },
 {"id":"ladybug",
 "name":"Ladybug",  
 "image":"src/assets/animals/ladybug.png",
-"details_api_endpoint":"/api/livingbeing/ladybug"
-}
+"details_api_endpoint":"/api/livingbeing/ladybug",
+"bg_popupscreen":"src/assets/bg/animals_popupbg/jungle.png" 
+},
+
 ],
 
 /*-------------------------------------------------------------------------------------------*/
 
 /*reptiles data*/
 "reptiles":[
+
 {
     "id":"crocodile",
     "name":"Crocodile",  

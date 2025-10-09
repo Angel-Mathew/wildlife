@@ -1,9 +1,10 @@
-import React from 'react';
+// src/Categories.jsx
+import React, { useState } from 'react'; // <--- Make sure useState is imported
 import { Link } from 'react-router-dom';
-import livingbeingdata from '../assets/data/livingbeing.js';;; // Adjust the path if your data file is in a different folder
-import './Categories.css'; // Assuming you'll create a CSS file for styling
-import Navbar from '../components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
- /*the card component in categories*/
+import livingbeingdata from '../assets/data/livingbeing.js';
+import './Categories.css';
+import Navbar from '../components/Navbar';
+import Popup from './Popup.jsx';// <--- Import the Popup component
 
 const CategoryCard = ({ name, image, onClick }) => {
   return (
@@ -13,33 +14,58 @@ const CategoryCard = ({ name, image, onClick }) => {
     </div>
   );
 }
+
 const Categories = () => {
+  const [selectedlivingbeing, setSelectedlivingbeing] = useState(null);
+  const [showPopup,setShowPopup]=useState(false)
+
+  const handleCardClick = (livingbeing, categoryName) => {
+    setSelectedlivingbeing({ ...livingbeing, category: categoryName });
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setSelectedlivingbeing(null);
+    setShowPopup(false)
+  };
+
+  const categoryBackgrounds = {
+    "Animals": "src/assets/bg/default_animal_bg.png",
+    "reptiles": "src/assets/bg/reptile_popupbg.png",
+    "birds": "src/assets/bg/birds_popupbg.png",
+    "fish": "src/assets/bg/fish_popupbg.png",
+  };
+
   return (
-   
-    
+    <>
+      <Navbar />
       <div className="categories_container">
         {Object.keys(livingbeingdata).map((categoryName) => (
           <section key={categoryName} className="category_section">
             <h2 className="category_title">{categoryName.toUpperCase()}</h2>
             <div className="category_cards_container">
-              {livingbeingdata[categoryName].map((creature) => (
+              {livingbeingdata[categoryName].map((livingbeing) => ( // Changed 'livingbeing' to 'creature' here
                 <CategoryCard
-                  key={creature.id}
-                  name={creature.name}
-                  image={creature.image}
-                   onClick={() => handleCardClick(creature)} //pop-up screen
+                  key={livingbeing.id}
+                  name={livingbeing.name}
+                  image={livingbeing.image}
+                  onClick={() => handleCardClick(livingbeing, categoryName)}
                 />
               ))}
             </div>
           </section>
         ))}
       </div>
-    
+
+      {showPopup && selectedlivingbeing &&(
+        <Popup
+          livingbeing={selectedlivingbeing}
+          onClose={handleClosePopup}
+          categoryBackgrounds={categoryBackgrounds}
+        />
+      )}
+    </>
   );
 };
 
-
-
-
-
-export default Categories; // This is the correct default export
+export default Categories;
