@@ -30,9 +30,9 @@ const Categories = () => {
   };
 
   const categoryBackgrounds = {
-    "Animals": "src/assets/bg/default_animal_bg.png",
+    "Animals": "src/assets/bg/animal_popupbg.png",
     "reptiles": "src/assets/bg/reptile_popupbg.png",
-    "birds": "src/assets/bg/birds_popupbg.png",
+    "birds": "src/assets/bg/bird_popupbg.png",
     "fish": "src/assets/bg/fish_popupbg.png",
   };
 

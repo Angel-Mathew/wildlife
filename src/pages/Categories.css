@@ -2,10 +2,12 @@
 .category_card {
   background-color: #D9D9D9;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: #00000062 1px 1px 1px 1px;
   text-align: center;
   margin-bottom: 5px;
  height: 150px;
+ 
+
 
   
   
@@ -14,13 +16,11 @@
 }
 .categories_container {
    padding: 20px;
-  max-width: 1250px;
+  width: 1250px;
   margin: 5px auto; /* Existing margin, you'll modify this */
   margin-top: 100px;
- 
- 
-  
-}
+ } /* to make whole card in center position*/
+
 .category_section {
   margin-bottom: 40px;
   
@@ -53,7 +53,7 @@ border-radius: 8px;
   
   padding: 10px 5px; /* Adjust padding as needed for vertical and horizontal space within the golden band */
   height: auto;
-  width: 95%;
+  width: 94.5%;
  
  border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
