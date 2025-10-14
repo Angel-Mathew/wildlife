@@ -50,7 +50,7 @@ const locationdata={
     "id":"australia",
     "name":"Australia",
     "image":"src/assets/map/australia.png",
-    "livingbeing":"Kangaroo,Koala,Rabbit,Dog,Cat,Dolphin,sealion ,Bat,Spider,Snail,Butterfly,Sugar Glider,Honeybee,Ladybug,Duck,Crocodile,Gecko,Monitor Lizards,Python,Turtle,Lizard,Skink,Parrot,Eagle,Owl,Penguin,Peacock,Flamingo,Swan,Robin,Hawk,Albatross,Cockatoo,Duck,Falcon,Hen,Cuckoo,Pheasant,Spoonbill,Emu,Lapwing,Kingfisher,Seahorse,Clownfish,Pufferfish,Shark,Stingray,Grouper,Lionfish,Swordfish,Goldfish,Catfish,Skate Fish,Blue Tang,Butterfly Fish,Barracuda     "            ,
+    "livingbeing":"Kangaroo,Koala,Rabbit,Dog,Cat,Dolphin,sealion ,Bat,Spider,Snail,Butterfly,Sugar Glider,Honeybee,Ladybug,Duck,Crocodile,Gecko,Monitor Lizards,Python,Turtle,Lizard,Skink,Parrot,Eagle,Owl,Penguin,Peacock,Flamingo,Swan,Robin,Hawk,Albatross,Cockatoo,Duck,Falcon,Hen,Cuckoo,Pheasant,Spoonbill,Emu,Lapwing,Kingfisher,Seahorse,Clownfish,Pufferfish,Shark,Stingray,Grouper,Lionfish,Swordfish,Goldfish,Catfish,Skate Fish,Blue Tang,Butterfly Fish,Barracuda",
     "details_api_endpoint":"/api/locationdata/australia",
 }
 ],
@@ -59,7 +59,7 @@ const locationdata={
     "id":"europe",
     "name":"Europe",
     "image":"src/assets/map/europe.png",
-    "livingbeing":"Horse,Rabbit,Dog,Cat,Lion,Cow,Sheep,Cheetah,Wolf,Beaver,Sika Deer,Squirrel,Otter,Bat,Frog,Dolphin,Grasshopper,Spider,Snail,Butterfly,Honeybee,Ladybug  "            ,
+    "livingbeing":"Horse,Rabbit,Dog,Cat,Lion,Cow,Sheep,Cheetah,Wolf,Beaver,Sika Deer,Squirrel,Otter,Bat,Frog,Dolphin,Grasshopper,Spider,Snail,Butterfly,Honeybee,Ladybug,Gecko,Chameleon,Tortoise,Turtle,Lizard,Eagle, Owl, Flamingo, Woodpecker, Swan, Vulture, Robin, Hawk, Duck, Falcon, Hen, Cuckoo, Peacock, Puffin, Spoonbill,Chukar Partridge,Hoopoe,Lapwing,Kingfisher,Crow,Dove,Seahorse,Shark,Stingray,Grouper,Swordfish,Catfish,Skate Fish,Barracuda",
     "details_api_endpoint":"/api/locationdata/europe",
 }
 ],
