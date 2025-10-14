@@ -1,6 +1,6 @@
 //this done to make the cards form easier to read and maintain
 const livingbeingdata = {
-    /*animals data*/
+    /*------------------------------------Animals data--------------------------*/
     "Animals":[
         {
             "id":"horse",
@@ -315,10 +315,10 @@ const livingbeingdata = {
 
 ],
 
-/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------Reptiles data--------------------------*/
 
-/*reptiles data*/
-"reptiles":[
+
+"Reptiles":[
 
 {
     "id":"crocodile",
@@ -415,10 +415,10 @@ const livingbeingdata = {
  "description":"The tuatara is a reptile endemic to New Zealand and the sole surviving member of the ancient order Rhynchocephalia, which thrived during the Mesozoic era. Despite resembling lizards, it represents a distinct lineage that first appeared around 244 million years ago. "
 }
 ],
-/*-------------------------------------------------------------------------------------------*/
 
-/*birds data*/
-"birds":[
+/*------------------------------------Birds data--------------------------*/
+
+"Birds":[
     {
         "id":"parrot",
         "name":"Parrot",  
@@ -666,9 +666,9 @@ const livingbeingdata = {
 }
 ],
 
-/*-------------------------------------------------------------------------------------------*/
-/*fish data*/
-"fish":[
+/*------------------------------------Fish data--------------------------*/
+
+"Fish":[
     {
         "id":"seahorse",
         "name":"Seahorse",  
@@ -800,3 +800,4 @@ const livingbeingdata = {
 /*-------------------------------------------------------------------------------------------*/
 };
 export default livingbeingdata;
+/*------------------------------------ THE END  ----------------------------------------------*/

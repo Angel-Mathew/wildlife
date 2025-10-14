@@ -76,8 +76,8 @@
 
 /* The actual image *inside* the white circle */
 .popup_image_in_circle {
-    width: 110%; /* Make image fill the circle container */
-    height: 110%;
+    width: 100%; /* Make image fill the circle container */
+    height: 100%;
     object-fit: contain; /*  contain will scale the image down to fit, preserving aspect ratio.*/
     display: block; /* Remove any extra space below image */
    
