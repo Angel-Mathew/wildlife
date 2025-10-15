@@ -1,24 +1,17 @@
 
 .category_card {
-  background-color: #D9D9D9;
+  background-color: #074e4a;
   border-radius: 8px;
-  box-shadow: #00000062 1px 1px 1px 1px;
+  box-shadow: #b57929 1px 1px 1px 1px;
   text-align: center;
   margin-bottom: 5px;
- height: 150px;
- 
-
-
-  
-  
-
-
+ height: 180px;
 }
 .categories_container {
    padding: 20px;
-  width: 1250px;
-  margin: 5px auto; /* Existing margin, you'll modify this */
-  margin-top: 100px;
+  width: 1200px;
+  margin: 5px auto; 
+  margin-top: 155px;
  } /* to make whole card in center position*/
 
 .category_section {
@@ -35,7 +28,8 @@
   width: 50%;
   height: 70px;
 border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 30px;
+  
 }
 .category_title{
      color:white;
@@ -50,14 +44,13 @@ border-radius: 8px;
 }
 .category_name {
    background-color: #D8B335; /* This is the golden color from your design */
-  
+   margin-top:40px ;
   padding: 10px 5px; /* Adjust padding as needed for vertical and horizontal space within the golden band */
-  height: auto;
-  width: 94.5%;
- 
+  height: 18px;
+  width: 94%;
  border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  
-  font-size: 15px; /* Adjust font size to fit well within the band, you might want 1.2em or 1em */
+  text-align: center;
+  font-size: 14px;
   text-transform: uppercase; /* Uppercase text */
 }
