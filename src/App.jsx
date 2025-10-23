@@ -10,7 +10,7 @@ import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Sightings from './pages/Sightings';
 import MyJourney from './pages/Myjourney';
-// import Footer from './components/Footer'; // Uncomment if you have a Footer component  
+import Sign from './pages/sign';
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/categories" element={<Categories />} />
         <Route path="/sightings" element={<Sightings />} />
         <Route path="/my-journey" element={<MyJourney />} />
+        <Route path="/Sign" element={<Sign />}/>
       </Routes>
        <Footer /> 
     </Router>

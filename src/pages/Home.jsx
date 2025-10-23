@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import './Home.css'; // Assuming you'll create a CSS file for styling
 import Navbar from '../components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
 
+//-------------------------------------------------------------------//
 const Home = () => {
   return (
     <main className="home-container"> <section id="intro">
     <img src="/mainbg.png" alt="Main Content" className="main_image" />
-    
+  
     <div className="intro-box">
       <div className="introduction">
        On the other side of the universe, the sounds of songs and roars.
@@ -20,7 +21,9 @@ a place where they can meet and speak through emotion and action.
       <button className="welcome">welcome to wildlife</button>
     </div>
   </section>
-  
+
+  {/*---------------------------------------------------------*/}
+
    {/* ABOUT Label Section */}
   <div className="label-container">
     <img src="/label.png" alt="Label" className="label-img" />
@@ -35,6 +38,9 @@ and even discover zoos, sanctuaries, or wildlife tourism spots where you can mee
 them face-to-face. You can also share your own safari trips in 'My Journey'. 
 Note: You can post anything related to wildlife.</p>
   </div>
+
+  {/*---------------------------------------------------------*/}
+
   {/* Categories */}
   <section id="Categories">
      <div className="label-container2">
@@ -42,6 +48,9 @@ Note: You can post anything related to wildlife.</p>
     <span className="label-text2">Categories </span>
     <img src="/rabbit.png" alt="rabbit" className="rabbit" />
      </div>
+
+     {/*---------------------------------------------------------*/}
+
      {/*button for each categories */}
       {/* Grid of category buttons */}
   <div className="categories-grid">
@@ -58,8 +67,8 @@ Note: You can post anything related to wildlife.</p>
       <span className="name3">Birds</span>
     </div>
 
-    
-
+     {/*---------------------------------------------------------*/}
+     
     <div className="item" onClick={() => window.location.href = "/fishes"}>
       <img src="/prints (1).png" alt="Fishes" className="prints" />
       <span className="name4">Fishes</span>

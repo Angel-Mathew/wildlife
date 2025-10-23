@@ -6,39 +6,31 @@ import Navbar from '../components/Navbar';
 
 const Sightingscard = ({ name, image, onClick }) => {
     return (
-        
         <div className='Sightingscard' onClick={onClick}>
             <img src={image} alt={name} className='map'/>
             <h3 className='Sightingname'>{name}</h3>
-           
         </div>
     );
 };
 
-// Component for the dropdown menu
-const DropdownMenu = ({ animals }) => { // Prop is 'animals'
-    // Ensure 'animals' is not null/empty
+const DropdownMenu = ({ animals }) => {
+    
     if (!animals || animals.length === 0) {
         return <div className="dropdown-content">No animals listed.</div>;
     }
 
-    // Split the comma-separated string into an array, trim whitespace
-    const animalsList = animals.split(',').map(item => item.trim()); // Correctly creates the array
+   
+    const animalsList = animals.split(',').map(item => item.trim());
 
     return (
         <div className="dropdown-content">
             <ul>
-               
-                {animalsList.map((item, index) => {
-                    const parts = item.split(' ');
-                    const emoji = parts[0];
-                    const name = parts.slice(1).join(' ');
-
+                {animalsList.map((animalName, index) => { 
                     return (
                         <li key={index} className="dropdown-item">
-                            {emoji && <span className="animal-emoji">{emoji}</span>}
-                            <span className="animal-name">{name}</span>
+                        <span className="animal-name">{animalName}</span>
                         </li>
+                        
                     );
                 })}
             </ul>
@@ -58,9 +50,8 @@ const Sightings = () => {
 
     return (
         <div className="sightings-page">
-            <Navbar />
-            <h1>Sightings by Continent</h1>
-            <div className="sightings-grid">
+            <p>This is section of animals located in each continent, to see the animals click on card and menu drop containing animals will be displayed</p>
+           <div className="sightings-grid">
                 {continents.map((continent) => (
                     <div key={continent.id} className="continent-wrapper">
                         <Sightingscard
@@ -68,9 +59,11 @@ const Sightings = () => {
                             image={continent.image}
                             onClick={() => handleCardClick(continent.name)}
                         />
-                        
                         {activeContinent === continent.name && (
-                            <DropdownMenu animals={continent.animals} /> // This is correct now
+                            <DropdownMenu 
+                            animals={continent.animals} 
+                            
+                            />
                         )}
                     </div>
                 ))}

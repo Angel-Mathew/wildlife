@@ -4,7 +4,7 @@ const locationdata={
       "id":"asia",
       "name":"Asia",
        "image":"src/assets/maps/asia.png",
-       "animals":" Horse,Tiger,Elephant,Rhinoceros,Markhor,Arabian Oryx,Camel,Red Panda,Wolf,Beaver,Sika Deer,The Carabao,Otter,Bat,Frog, Grasshopper, Spider,Snail,Butterfly,Honeybee,LadyBug,Crocodile,Gecko,Chameleon,Monitor lizards,Python,Cobra,Tortoise,Turtle,Lizard,Skink,Parrot,Eagle,Peacock,Flamingo,Woodpecker,Canary, Swan,Hummingbird,Vulture,Hawk,Cockatoo,Macaw,Hornbill,Duck,Falcon,Hen,cuckoo,Pheasant,Hoopoe,Philippine eagle,Lapwing,kingfisher,Black drongo,Crow,Dove,Queen Angelfish, Pufferfish,🐠 Blue Tang,🦈 Shark,Seahorse,Clownfish,Stingray,Grouper,Lionfish,Swordfish,Siamese Fighting Fish,Goldfish,Catfish,Skate Fish,Butterfly Fish,Barracuda ",
+       "animals":" Horse,Tiger,Elephant,Rhinoceros,Markhor,Arabian Oryx,Camel,Red Panda,Wolf,Beaver,Sika Deer,The Carabao,Otter,Bat,Frog, Grasshopper, Spider,Snail,Butterfly,Honeybee,LadyBug,Crocodile,Gecko,Chameleon,Monitor lizards,Python,Cobra,Tortoise,Turtle,Lizard,Skink,Parrot,Eagle,Peacock,Flamingo,Woodpecker,Canary, Swan,Hummingbird,Vulture,Hawk,Cockatoo,Macaw,Hornbill,Duck,Falcon,Hen,cuckoo,Pheasant,Hoopoe,Philippine eagle,Lapwing,kingfisher,Black drongo,Crow,Dove,Queen Angelfish, Pufferfish,Blue Tang,Shark,Seahorse,Clownfish,Stingray,Grouper,Lionfish,Swordfish,Siamese Fighting Fish,Goldfish,Catfish,Skate Fish,Butterfly Fish,Barracuda ",
        "details_api_endpoint":"/api/locationdata/asia",
     }
         

@@ -3,7 +3,7 @@ import React from 'react';
 const Myjourney = () => {
   return (
     <div>
-      <h1>Categories Page</h1>
+      <h1> Journey Page</h1>
     </div>
   );
 };

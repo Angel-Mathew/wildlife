@@ -1,55 +1,54 @@
 
-.category_card {
+.card {
   background-color: #074e4a;
-  border-radius: 8px;
-  box-shadow: #b57929 1px 1px 1px 1px;
+  border-radius: 20px;
+  box-shadow: #b57929 1px 1px 5px 1px;
   text-align: center;
   margin-bottom: 5px;
  height: 180px;
 }
-.categories_container {
+.container {
    padding: 20px;
   width: 1200px;
   margin: 5px auto; 
   margin-top: 155px;
- } /* to make whole card in center position*/
+ } 
 
-.category_section {
+.sections {
   margin-bottom: 40px;
   
 }
-.category_cards_container {
+.card_container {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 
 }
-.category_image {
+.pic {
   width: 50%;
   height: 70px;
 border-radius: 8px;
   margin-top: 30px;
   
 }
-.category_title{
-     color:white;
+.heading{
+     color:rgb(255, 255, 255);
     font-family:  "Sigmar One", sans-serif;
     font-size: 35px;
     text-align: left;
     margin-top: 5px;
      margin-bottom: 20px;
-     
-     padding: 10px;
+    padding: 10px;
      text-shadow: 7px 6px 5px rgb(0, 0, 0);
 }
-.category_name {
+.names {
    background-color: #D8B335; /* This is the golden color from your design */
    margin-top:40px ;
   padding: 10px 5px; /* Adjust padding as needed for vertical and horizontal space within the golden band */
   height: 18px;
   width: 94%;
- border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+ border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-align: center;
   font-size: 14px;
   text-transform: uppercase; /* Uppercase text */
