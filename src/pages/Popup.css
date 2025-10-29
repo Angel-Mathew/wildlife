@@ -58,7 +58,7 @@
 
 
 /* Circular image container (the white circle) */
-.popup_image_circle_container {
+.imagecirclecontainers {
     position: absolute; /* Position relative to .popup_content_wrapper */
     margin-top: 80px;
     left: 50%; /* Center horizontally */
@@ -75,7 +75,7 @@
 }
 
 /* The actual image *inside* the white circle */
-.popup_image_in_circle {
+.imageincircle {
     width: 100%; /* Make image fill the circle container */
     height: 100%;
     object-fit: contain; /*  contain will scale the image down to fit, preserving aspect ratio.*/
@@ -83,19 +83,9 @@
    
 }
 
-/* Name title */
-.popup_name_title {
-    font-family: "Sigmar One", sans-serif; /* Use your custom font */
-    font-size: 30px; /* Larger size */
-    margin-top: 150px; 
-  
-
-    z-index: 1004; /* Ensure it's above the background, below image/close */
-   
-}
 
 /* Description box (the rounded rectangle for text) */
-.popup_description_box {
+.boxfordescription{
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
     border: 2px solid #D8B335; 
     border-radius: 15px; /* Rounded corners */
@@ -109,35 +99,3 @@
 
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .popup_content_wrapper {
-        width: 50%;
-        padding: 20px;
-        max-height: 90vh;
-        border-radius: 15px;
-    }
-
-    .popup_creature_image_circle_container {
-        width: 120px;
-        height: 120px;
-    }
-
-    .popup_name_title {
-        font-size: 2em;
-        margin-top: 40px;
-    }
-
-    .popup_description_box {
-        padding: 20px;
-        width: 95%;
-        margin-top: 15px;
-        font-size: 1em;
-    }
-
-    .popup_close_button {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-    }
-}

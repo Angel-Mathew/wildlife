@@ -38,13 +38,13 @@ const Popup = ({ livingbeing, onClose, categoryBackgrounds }) => {
       >
         <button className="popup_close_button" onClick={onClose}>X</button>
         
-        <div className="popup_image_circle_container">
-          <img src={livingbeing.image}  className="popup_image_in_circle" />
+        <div className="imagecirclecontainers">
+          <img src={livingbeing.image}  className="imageincircle" />
         </div>
         
         
 
-        <div className="popup_description_box"> 
+        <div className="boxfordescription"> 
           <p>{details}</p>
         </div>
       </div>
