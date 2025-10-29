@@ -28,22 +28,28 @@ const handleSubmit = async(e) => {
   }
 };
 return(
-  <button class="open-button" onclick="openForm()">Login</button>
+  <div className='signup'>
+    <h1> Sign up </h1>
+    <form onSubmit={handleSubmit}>
+      <input
+      type='email'
+      name='email'
+      placeholder='Enter your email'
+      onChange={handleChange}
+      required />
+      <br/>
+      <input
+      type='password'
+      name='password'
+      placeholder='Enter your pasword'
+      onChange={handleChange}
+      required
+      />
+      <button type='submit'> Sign Up</button>
 
-<div class="pop-up" id="account_form">
-  <form action="http://localhost:4000/api/users/login" method="POST" class="container">
-    <h3>Login</h3>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" class="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" class="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-  );
+    </form>
+  </div>
+)
 }
 
 export default Sign ; // This is the correct default export
