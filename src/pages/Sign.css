@@ -1,0 +1,26 @@
+.open{
+    position: absolute;
+    top: 40px;
+    right: -92%;
+    border-top-left-radius: 10px;
+  border-bottom-right-radius:5px ;
+    background:  #055757;
+    color: #ffffff;
+   font-size:25px;
+  font-family: 'Sail', cursive;
+     padding: 15px 20px;
+    border: 2px solid #d39b38;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.952);
+  
+
+}
+.sign-form-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+  padding: 20px;
+    background: #055757;
+   
+    align-items: center;
+}

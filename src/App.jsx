@@ -1,30 +1,40 @@
 // App.jsx
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
-import Body from './components/body';
-import Footer from './components/Footer'; // Adjust the path if your Footer.jsx is in a different foldera
-// Example components for your routes
-{/* You can replace these with your actual components */}
+// Importing Navbar and Footer components
+import Navbar from './components/Navbar'; 
+import Footer from './components/Footer'; 
+
+//global css
+import './App.css';
+
+// Importing different pages
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Sightings from './pages/Sightings';
-import MyJourney from './pages/Myjourney';
-import Sign from './pages/sign';
+import MyJourney from './pages/MyJourney';
+
 
 const App = () => {
   return (
+
     <Router>
+      <div className="app_container" >
+
+
       <Navbar />
-      <body/>
-      <Routes>
+      <main className="main_content">
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/sightings" element={<Sightings />} />
-        <Route path="/my-journey" element={<MyJourney />} />
-        <Route path="/Sign" element={<Sign />}/>
+        <Route path="/MyJourney" element={<MyJourney />} />
+       
       </Routes>
-       <Footer /> 
+      </main>
+      <Footer /> 
+      </div>
     </Router>
   );
 };

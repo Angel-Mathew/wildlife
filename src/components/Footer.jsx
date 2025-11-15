@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'; //  created a CSS file for styling
+import Sign from '../pages/Sign';
 const Footer = () => { 
     return ( // the footer and design of the footer is under main div (parent div),this is done to make the footer process easy
            <div>
@@ -21,6 +22,7 @@ const Footer = () => {
     <a href="https://www.whatsapp.com/elysia_wildlife/" target="_blank" rel="noopener noreferrer" style={{color:"black"}}> Whatsapp</a>
    </h3>
     <h3>© 2025 Elysia. All rights reserved.</h3>
+    <div className="sign-up-link"><Sign/></div>
   </div>
 </footer>
            </div>

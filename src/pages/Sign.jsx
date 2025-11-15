@@ -6,6 +6,10 @@ const Sign = () => {
     email:"",
     password:""
   });
+  const [showSignForm, setShowSignForm] = useState(false);
+  const toggleSignForm = () => {
+    setShowSignForm(!showSignForm);
+  }
 const handleChange = (e) =>{
 setFormData({...formData, [e.target.name]: e.target.value});
 };
@@ -23,33 +27,44 @@ const handleSubmit = async(e) => {
     });
     const data =await res.json();
     alert(data.message || "Complete!");
+    if(res.ok){
+      setFormData({email:"", password:""});
+      setShowSignForm(false);
+    }
   }catch (error) {
     console.error("Error:",error);
   }
 };
-return(
-  <div className='signup'>
-    <h1> Sign up </h1>
-    <form onSubmit={handleSubmit}>
-      <input
-      type='email'
-      name='email'
-      placeholder='Enter your email'
-      onChange={handleChange}
-      required />
-      <br/>
-      <input
-      type='password'
-      name='password'
-      placeholder='Enter your pasword'
-      onChange={handleChange}
-      required
-      />
-      <button type='submit'> Sign Up</button>
-
-    </form>
-  </div>
-)
+return (
+    <>
+    <button className='open' onClick={toggleSignForm}>Sign Up</button>
+    {showSignForm && (
+    <div className="sign-form-container">
+      <form className="sign-form" onSubmit={handleSubmit}>
+         <input
+          className='email'
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="password" 
+          name="password"
+          placeholder="Password"
+          value={formData.password}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Submit</button>  
+        <button type="button" className="close-btn" onClick={toggleSignForm}>Close</button> 
+      </form>
+    </div>
+    )}
+    </>
+  );
 }
 
 export default Sign ; // This is the correct default export
