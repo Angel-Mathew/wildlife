@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import { Link } from 'react-router-dom';
 import './MyJourney.css';
 import Navbar from '../components/Navbar.jsx';
@@ -47,7 +47,7 @@ const MyJourney = () => {
           <button onClick={() => handleOpenUploadBox('video')}>▶️</button>
           <button onClick={() => handleOpenUploadBox('text')}>📄</button>
         </div>
-        <button onClick={handleCloseUploadBox} className="close_btn">✖️</button>
+       
       </div>
       {showUploadBox && (
         <UploadSection
