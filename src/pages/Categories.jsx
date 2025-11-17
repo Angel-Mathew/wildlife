@@ -1,5 +1,5 @@
-import React, { useState } from 'react'; 
-import { Link } from 'react-router-dom';//react-route-dom navigate the  components
+import React, { useState,useEffect } from 'react'; 
+import { Link, useParams } from 'react-router-dom';//react-route-dom navigate the  components
 import livingbeingdata from '../assets/data/livingbeing.js'; // importing the js file which contain different species with names and images
 import './Categories.css'; // importing style of categories pages
 import Navbar from '../components/Navbar';// importing navigation from components
@@ -22,9 +22,19 @@ const CategoryCard = ({ name, image, onClick }) => {
 //.......................................................................//
 
 const Categories = () => {
+  const { categoryName } = useParams();
   const [selectedlivingbeing, setSelectedlivingbeing] = useState(null);//useState manages in tracking which animal is selected 
   //Tracks which livingbeing is currently selected (null when nothing is selected ) 
-  const [showPopup,setShowPopup]=useState(false) // controls the displaying of popup screen
+ const [showPopup,setShowPopup]=useState(false) // controls the displaying of popup screen
+ const [filteredData, setFilteredData] = useState({});
+
+ useEffect(()=>{
+  if (categoryName && livingbeingdata[categoryName]){
+    setFilteredData({[categoryName]: livingbeingdata[categoryName]});
+  } else {
+    setFilteredData(livingbeingdata)
+  }
+ },[categoryName]);
 
   const handleCardClick = (livingbeing, Name) => {
     setSelectedlivingbeing({ ...livingbeing, category: Name });
@@ -44,6 +54,7 @@ const Categories = () => {
     "Birds": "src/assets/bg/bird_popupbg.png",
     "Fish": "src/assets/bg/fish_popupbg.png",
   };
+  //explanation:
   // This for popup screen background,each category  has different background  
   // such as animals category the popup screen will have land background,
   // reptile category the popup screen green bg
@@ -57,14 +68,14 @@ const Categories = () => {
       <Navbar />
        
           <div className="container">
-        {Object.keys(livingbeingdata).map((Name) => ( 
-          //Object.keys(livingbeingdata):Gets all categories such as animals,reptiles,fishes and birds from the data 
+        {Object.keys(filteredData).map((Name) => ( 
+          //filteredData  is used so that single data or specifed data can be displayed
           // map loops through each category and make section for it
           <section key={Name} className="sections">
             <h2 className="heading">{Name}</h2>
             <div className="card_container">  {/* contains a container for all cards */ }
               
-              {livingbeingdata[Name].map((livingbeing) => ( 
+              {filteredData[Name].map((livingbeing) => ( 
                 <CategoryCard
                   key={livingbeing.id} // keys for list items
                   name={livingbeing.name}

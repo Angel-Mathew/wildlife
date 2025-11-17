@@ -1,10 +1,10 @@
 import React,{ useState } from "react";
 import { Link } from 'react-router-dom';
-import './MyJourney.css';
+import './Journey.css';
 import Navbar from '../components/Navbar.jsx';
 import UploadSection from './UploadSection.jsx';
 
-const MyJourney = () => {
+const Journey = () => {
   const [Posts, setPosts] = useState([]);
   const [showUploadBox, setShowUploadBox] = useState(false);
   const [currentUploadType, setCurrentUploadType] = useState('image');
@@ -76,4 +76,4 @@ const MyJourney = () => {
     </div>
   );
 };
-export default MyJourney;
+export default Journey;

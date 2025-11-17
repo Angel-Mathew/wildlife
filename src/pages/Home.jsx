@@ -51,27 +51,36 @@ Note: You can post anything related to wildlife.</p>
      {/*---------------------------------------------------------*/}
 
      {/*button for each categories */}
-      {/* Grid of category buttons */}
+    
   <div className="categories-grid">
-    <div className="item" onClick={() => window.location.href = "/animals"}>
-      <img src="/prints (4).png" alt="Animals" className="prints" />
+   <Link to="/categories/Animals" className='item'>
+     <img src="/prints (4).png" alt="Animals" className="prints" />
       <span className="name1">Animals</span>
-    </div>
-   <div className="item" onClick={() => window.location.href = "/reptiles"}>
-      <img src="/prints (3).png" alt="Reptiles" className="prints" />
+    </Link>
+    {/*---------------------------------------------------------*/}
+    <Link to ="/categories/Reptiles" className='item'>
+    <img src="/prints (3).png" alt="Reptiles" className="prints" />
       <span className="name2">Reptiles</span>
-    </div>
-    <div className="item" onClick={() => window.location.href = "/birds"}>
-      <img src="/prints (2).png" alt="Birds" className="prints" />
-      <span className="name3">Birds</span>
-    </div>
+    </Link>
+   
 
-     {/*---------------------------------------------------------*/}
+      {/*---------------------------------------------------------*/} 
+    
+    <Link to="/categories/Birds" className='item'>
+    <img src="/prints (2).png" alt="Birds" className="prints" />
+      <span className="name3">Birds</span>
+    </Link>
+      
+    
+      {/*---------------------------------------------------------*/}
+    
      
-    <div className="item" onClick={() => window.location.href = "/fishes"}>
-      <img src="/prints (1).png" alt="Fishes" className="prints" />
+   <Link to="/categories/Fish" className='item'>
+   <img src="/prints (1).png" alt="Fishes" className="prints" />
       <span className="name4">Fishes</span>
-    </div>
+   </Link>
+      
+   
 
   </div>
   </section>

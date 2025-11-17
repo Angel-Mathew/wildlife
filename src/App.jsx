@@ -3,6 +3,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Importing Navbar and Footer components
+
 import Navbar from './components/Navbar'; 
 import Footer from './components/Footer'; 
 
@@ -13,7 +14,8 @@ import './App.css';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Sightings from './pages/Sightings';
-import MyJourney from './pages/MyJourney';
+import Journey from './pages/Journey';
+
 
 
 const App = () => {
@@ -27,9 +29,10 @@ const App = () => {
       <main className="main_content">
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
+        
+        <Route path="/categories/:categoryName?" element={<Categories />} />
         <Route path="/sightings" element={<Sightings />} />
-        <Route path="/MyJourney" element={<MyJourney />} />
+        <Route path="/Journey" element={<Journey />} />
        
       </Routes>
       </main>

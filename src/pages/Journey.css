@@ -93,14 +93,7 @@
     transform: scale(1.1);
 }
 
-.upload_section .close_btn {
-    font-size: 1.8em;
-    color:rgb(3, 50, 50);
-    cursor:pointer;
-}
-.upload_section .close_btn:hover {
-    transform: scale(1.1);
-}
+
 
 /*posts section*/
 .posts_section{
