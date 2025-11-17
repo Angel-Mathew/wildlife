@@ -38,7 +38,7 @@ const UploadSection = ({ onUpload, onClose, uploadType }) => {
     }
   };
   return (
-    <div className="upload_section">
+    <div className="upload">
       <div className="uploadingbox">
         <button onClick={onClose} className="close_btn">x</button>
         <form onSubmit={handleSubmit} className="upload_form">
@@ -61,8 +61,8 @@ const UploadSection = ({ onUpload, onClose, uploadType }) => {
               ></textarea>
             ) : (
               <p className="instruction">
-                {uploadType === 'image' && 'select an image to upload.'}
-                {uploadType === 'video' && 'select a video to upload.'}
+                {uploadType === 'image' }
+                {uploadType === 'video' }
               </p>
             )}
             <button type ="submit" className="upload_btn">upload</button>

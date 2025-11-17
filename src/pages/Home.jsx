@@ -13,9 +13,8 @@ const Home = () => {
       <div className="introduction">
        On the other side of the universe, the sounds of songs and roars.
 Freedom soars through the sky, where whispers of nature and an unknown 
-language are spoken by creatures — 
-  understood only by the creator.
-So, the creator formed a bridge between the human and natural worlds — 
+language are spoken by creatures understood only by the creator.
+So, the creator formed a bridge between the human and natural worlds
 a place where they can meet and speak through emotion and action.
       </div>
       <button className="welcome">welcome to wildlife</button>

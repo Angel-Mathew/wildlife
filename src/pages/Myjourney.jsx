@@ -41,12 +41,14 @@ const MyJourney = () => {
       </div>
       
       <div className="pg_content">
-      <div className="upload_section">
+      <div className="upload_section ">
+        
         <div className="btns">
           <button onClick={() => handleOpenUploadBox('image')}>📷</button>
           <button onClick={() => handleOpenUploadBox('video')}>▶️</button>
           <button onClick={() => handleOpenUploadBox('text')}>📄</button>
         </div>
+
        
       </div>
       {showUploadBox && (
