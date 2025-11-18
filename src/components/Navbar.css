@@ -32,18 +32,18 @@
 .ribbon {
   position: absolute;
   left: -1%;  /* adjust based on your ribbon PNG */
-  top: -9%;
-  height: 170px;
+  top: -20%;
+  height: 200px;
   z-index: -2; /* behind text */
 }
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 .name {
   font-family: 'Sail', cursive;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  margin-left: 15px;
-  margin-top:-5%;
+  margin-left: -3%;
+  margin-top:-3%;
 
 }
 /* Gold opening on top-right */

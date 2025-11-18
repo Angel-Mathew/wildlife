@@ -65,7 +65,7 @@ const UploadSection = ({ onUpload, onClose, uploadType }) => {
                 {uploadType === 'video' }
               </p>
             )}
-            <button type ="submit" className="upload_btn">upload</button>
+            <button type ="submit" className="upload_btn">Upload</button>
             
             
           </div>

@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="logo-box">
         <img src="/elysia.png" alt="Elysia Logo" className="logo" />
         <img src="/design(2).png" alt="Elysia " className="ribbon" />
-        <span className="name">Elysia</span> 
+        <span className="name">Animal Valley</span> 
       </div>
         </Link>
       </div>

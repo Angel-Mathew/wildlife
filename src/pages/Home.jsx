@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Assuming you'll create a CSS file for styling
+import livingbeingdata from '../assets/data/livingbeing.js'; 
 import Navbar from '../components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
 
 //-------------------------------------------------------------------//
