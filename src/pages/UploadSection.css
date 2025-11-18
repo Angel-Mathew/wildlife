@@ -11,11 +11,11 @@
     z-index: 1000;  
 }
 .uploadingbox{
-    background-color: #f1bb1b;
+    background-color: #053c2b;
     
    border-radius: 50px;
     
-    box-shadow: #05eeff 2px 2px 2px 2px;
+    box-shadow: #05eeff 2px 3px 2px 4px;
    padding: 30px;
     width:90%;
     max-width: 400px;

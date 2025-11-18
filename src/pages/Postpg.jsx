@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import './PostDisplayPage.css';
+import './PostPg.css';
 import Navbar from '../components/Navbar.jsx';
 
 const Postpg = () =>{
@@ -11,26 +11,27 @@ const Postpg = () =>{
     },[]);
 
     const handlelikeToggle = (id) => {
-        setPosts((prevPosts) =>
-            prevPosts.map((post) =>
+        setPosts((prevPosts) =>{
+        const updatedPosts= prevPosts.map((post) =>
             post.id === id? {...post,liked: !post.liked} : post
-    )
     );
-    localStorage.setItem('userPosts',JSON.stringify(posts.map((post)=>
-        post.id === id? {...post,liked: !post.liked} : post
-    )));
+    localStorage.setItem('userPosts', JSON.stringify(updatedPosts));
+    return updatedPosts;
+}
+    );
+   
     
     };
     return(
-        <div className="post_display_container">
+        <div className="post_display_section">
             <Navbar/>
-            <div className="post_feed">
+            <div className="feed">
                 {posts.length>0?(
                     posts.map((post)=>(
-                        <div key={post.id} className="post_card">
-                            {post.type === 'image' && (<img src ={post.content} alt ={'User Post ${post.id}'} className="post_media"/>)}
-                            {post.type === 'video' && (<video src={post.content} controls className="post_video"/>) }
-                            {post.type === 'text' && (<p className="post_text">{post.content}</p>)}
+                        <div key={post.id} className="individual_post_card">
+                            {post.type === 'image' && (<img src ={post.content} alt ={'User Post ${post.id}'} className="mediapost"/>)}
+                            {post.type === 'video' && (<video src={post.content} controls className="mediapost"/>) }
+                            {post.type === 'text' && (<p className="text">{post.content}</p>)}
 
                             <div className="user_interaction">
                                 <img

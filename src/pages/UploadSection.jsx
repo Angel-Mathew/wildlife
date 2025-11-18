@@ -4,15 +4,26 @@ import './UploadSection.css';
 const UploadSection = ({ onUpload, onClose, uploadType }) => {
   const fileInputRef = useRef(null);
   const [textContent,  setTextContent] = useState('');
+  const [selectedFileName,setSelectedFileName] = useState('');
 
   useEffect(()=>{
     if (uploadType === 'image' || uploadType === 'video'){
       const timer = setTimeout(()=>{
-        fileInputRef.current?.click();
+      if (fileInputRef.current) {
+        fileInputRef.current.click();
+      }
       },40);
       return () => clearTimeout(timer);
     }
   },[uploadType]);
+  const handleFileChange = (e) =>{
+    const file = e.target.files[0];
+    if (file){
+      setSelectedFileName(file.name);
+    } else {
+      setSelectedFileName('');
+    }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     if (uploadType === 'image' || uploadType === 'video') {
@@ -23,6 +34,10 @@ const UploadSection = ({ onUpload, onClose, uploadType }) => {
           onUpload({ type: uploadType, content: reader.result, name: file.name });
           onClose();
         };
+        reader.onerror = (error) => {
+          console.error("FileReader error:",error)
+          alert('Failed to read file.')
+        }
         reader.readAsDataURL(file);
       } else {
         alert('Please select a file to upload.');
@@ -44,12 +59,26 @@ const UploadSection = ({ onUpload, onClose, uploadType }) => {
         <form onSubmit={handleSubmit} className="upload_form">
           <div className="content_area">
             {(uploadType === 'image' || uploadType === 'video') && (
-              <input
+             <>
+             <input
               type='file'
               accept={uploadType === 'image' ? 'image/*' : 'video/*'}
               ref={fileInputRef}
+              onChange={handleFileChange}
               style={{ display: 'none' }}
               />
+
+              <p className="instruction">
+                {selectedFileName? 'File selected: $ {selectedFileName}' : 'Please select an ${uploadType}file.'}
+              </p>
+              {!selectedFileName && (
+                <button type="button" onClick={() => 
+                  fileInputRef.current?.click()} className="reselect_btn">
+                  Select file
+                  </button>
+                )}
+
+              </>
             )}
             {uploadType === 'text' ?(
               <textarea
@@ -59,12 +88,7 @@ const UploadSection = ({ onUpload, onClose, uploadType }) => {
               className="text_input"
               rows="9"
               ></textarea>
-            ) : (
-              <p className="instruction">
-                {uploadType === 'image' }
-                {uploadType === 'video' }
-              </p>
-            )}
+            ) : null}
             <button type ="submit" className="upload_btn">Upload</button>
             
             

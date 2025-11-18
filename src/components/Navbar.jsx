@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="logo-box">
         <img src="/elysia.png" alt="Elysia Logo" className="logo" />
         <img src="/design(2).png" alt="Elysia " className="ribbon" />
-        <span className="name">Animal Valley</span> 
+        <span className="name">Elysia</span> 
       </div>
         </Link>
       </div>
@@ -24,6 +24,7 @@ const Navbar = () => {
         <li>
           <Link to="/Journey">My Journey🐾</Link>
         </li>
+       
       </ul>
     
       <img src="/gold.png" alt="Gold Corner" className="gold" />

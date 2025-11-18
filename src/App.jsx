@@ -15,6 +15,7 @@ import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Sightings from './pages/Sightings';
 import Journey from './pages/Journey';
+import Postpg from './pages/postpg';
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/categories/:categoryName?" element={<Categories />} />
         <Route path="/sightings" element={<Sightings />} />
         <Route path="/Journey" element={<Journey />} />
+        <Route path="/postpg" element={<Postpg/>}/>
        
       </Routes>
       </main>

@@ -1,17 +1,20 @@
 import React,{ useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Journey.css';
 import Navbar from '../components/Navbar.jsx';
 import UploadSection from './UploadSection.jsx';
 
 const Journey = () => {
-  const [Posts, setPosts] = useState([]);
   const [showUploadBox, setShowUploadBox] = useState(false);
   const [currentUploadType, setCurrentUploadType] = useState('image');
-  
+  const navigate = useNavigate();
+
   const handleNewUpload = (newPost) => {
-    setPosts((prevPosts) => [{...newPost, id: Date.now(), liked: false},...prevPosts]);
-    setShowUploadBox(false);
+   const existingPosts = JSON.parse(localStorage.getItem('userPosts')) || [];
+   const updatedPosts = [{...newPost, id: Date.now(), liked:false},...existingPosts];
+   localStorage.setItem('userPosts',JSON.stringify(updatedPosts));
+   setShowUploadBox(false);
+   navigate('/myjourney/posts');
   };
 
   const handleOpenUploadBox = (type) => {
@@ -23,13 +26,7 @@ const Journey = () => {
     setShowUploadBox(false);
   };
 
-  const handlelikeToggle = (id) =>{
-    setPosts((prevPosts) =>
-      prevPosts.map((post) =>
-        post.id === id ? { ...post, liked: !post.liked } : post
-      )
-    );
-  };
+  
   return (
     <div className="pg_container">
       <Navbar />
@@ -58,22 +55,11 @@ const Journey = () => {
         uploadType={currentUploadType}
         />
       )}
-      <div className="posts_section">
-        {Posts.map((post) => (
-          <div key={post.id} className="post_card">
-            {post.type === 'image' && (<img src={post.content} alt={'User Post ${post.id}'} className="media" />)}
-            {post.type === 'video' && (<video src={post.content} controls className="media" />)}
-            {post.type === 'text' && (<p className="text_content">{post.content}</p>)}
-
-        <div className="icons">
-          <img src={post.liked?"/likefill.png":"/like.png"} alt="like" className="icon" onClick={() => handlelikeToggle(post.id)}style={{cursor:"pointer"}} />
-          <img src="/comment.png" alt="comment" className="icon" style ={{cursor:'default'}} />
+      <div className="posts_section" style={{display:'none'}}>
         </div>
-          </div>
-        ))}
-     </div>
-    </div>
-    </div>
+        </div>
+        </div>
+        
   );
 };
 export default Journey;
