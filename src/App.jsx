@@ -3,9 +3,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Importing Navbar and Footer components
-
+import Scrolltop from './components/Scrolltop';
 import Navbar from './components/Navbar'; 
 import Footer from './components/Footer'; 
+
 
 //global css
 import './App.css';
@@ -23,6 +24,7 @@ const App = () => {
   return (
 
     <Router>
+     <Scrolltop/>
       <div className="app_container" >
 
 

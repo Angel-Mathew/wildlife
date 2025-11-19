@@ -44,6 +44,7 @@ border-radius: 8px;
 }
 .names {
    background-color: #D8B335; /* This is the golden color from your design */
+   border: 2px solid #3f2d03;
    margin-top:40px ;
   padding: 10px 5px; /* Adjust padding as needed for vertical and horizontal space within the golden band */
   height: 18px;

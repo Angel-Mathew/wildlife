@@ -49,10 +49,10 @@ const Categories = () => {
 
 
   const categoryBackgrounds = {
-    "Animals": "src/assets/bg/animal_popupbg.png",
-    "Reptiles": "src/assets/bg/reptile_popupbg.png",
-    "Birds": "src/assets/bg/bird_popupbg.png",
-    "Fish": "src/assets/bg/fish_popupbg.png",
+    "Animals": "/asset/bg/animal_popupbg.png",
+    "Reptiles": "/asset/bg/reptile_popupbg.png",
+    "Birds": "/asset/bg/bird_popupbg.png",
+    "Fish": "/asset/bg/fish_popupbg.png",
   };
   //explanation:
   // This for popup screen background,each category  has different background  

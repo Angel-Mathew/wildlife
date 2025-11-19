@@ -21,11 +21,16 @@
   position: relative;
 
 }
-
+.logo-box a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
 .logo {
   height: 150px;
   margin-right: 10px;
   margin-top: -5%;
+  
 }
 
 
@@ -35,6 +40,7 @@
   top: -20%;
   height: 200px;
   z-index: -2; /* behind text */
+ 
 }
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 .name {
@@ -42,10 +48,11 @@
   font-size: 21px;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  margin-left: -3%;
+  margin-left: 3%;
   margin-top:-3%;
-
+ 
 }
+
 /* Gold opening on top-right */
 .gold {
   position: absolute;
@@ -61,6 +68,7 @@
 
 gap: 20px;
 }
+
 .navbar-links li { 
   align-items: center;
   justify-content: center;

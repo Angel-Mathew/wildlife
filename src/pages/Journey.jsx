@@ -34,7 +34,7 @@ const Journey = () => {
       <div className="heading_section">
         <img src="/borderh.png" alt="hello wildlife lovers! welcome" className="heading_banner" />
         <h1 className="intro">Hello wildlife lovers! Share the harmonious essence of the wild</h1>
-        <img src="elysia.png" alt="logo" className="logo_img" />
+        <img src="/wildsoar.png" alt="logo" className="logo_img" />
       </div>
       
       <div className="pg_content">

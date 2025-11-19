@@ -8,9 +8,9 @@ const Navbar = () => {
       <div className="navbar-brand">
         <Link to="/">
           <div className="logo-box">
-        <img src="/elysia.png" alt="Elysia Logo" className="logo" />
-        <img src="/design(2).png" alt="Elysia " className="ribbon" />
-        <span className="name">Elysia</span> 
+        <img src="/wildsoar.png" alt="wildsoarLogo" className="logo" />
+        <img src="/design(2).png" alt="wildsoar" className="ribbon" />
+        <span className="name">WildSoar</span> 
       </div>
         </Link>
       </div>

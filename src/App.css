@@ -39,7 +39,7 @@ body::before {
   background-color: transparent;
   z-index:1;
 }
-.app-container {
+.app_container {
   display:flex;
   flex-direction: column;
   flex-grow: 1;
@@ -47,7 +47,33 @@ body::before {
   z-index:1;
   position: relative;
   color:black;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+
 }
+ ::-webkit-scrollbar{
+  width:12px;
+ }
+ ::-webkit-scrollbar-track{
+  background-color: #022e23;;
+  border-radius: 25px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px ;
+ }
+ ::-webkit-scrollbar-thumb{
+  background: #5a3006;
+   border-top-left-radius: 20px;
+  border-bottom-right-radius:20px ;
+  border:2px solid #d39b38;
+  
+
+ }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #efa70c;
+  }
+
 .main_content {
   flex-grow: 1;
   width:100%;

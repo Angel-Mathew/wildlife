@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import './Home.css'; // Assuming you'll create a CSS file for styling
 import livingbeingdata from '../assets/data/livingbeing.js'; 
 import Navbar from '../components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
@@ -32,7 +32,7 @@ a place where they can meet and speak through emotion and action.
     <img src="/about.png" alt="about" className="about" />
   
     <p className="about-text">             
-      Welcome to Elysia. 
+      Welcome to WildSoar. 
 Here you can explore information about various animals, birds, reptiles, and fish, 
 and even discover zoos, sanctuaries, or wildlife tourism spots where you can meet 
 them face-to-face. You can also share your own safari trips in 'My Journey'. 
