@@ -37,8 +37,8 @@ const handleSubmit = async(e) => {
 };
 return (
     <>
-    <button className='open' onClick={toggleSignForm}>Sign Up</button>
-    {showSignForm && (
+    <button className='open' onClick={toggleSignForm}>Sign in</button>
+    {showSignForm && ( 
     <div className="sign-form-container">
       <form className="sign-form" onSubmit={handleSubmit}>
          <input

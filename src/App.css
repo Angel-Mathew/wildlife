@@ -55,11 +55,13 @@ body::before {
 }
  ::-webkit-scrollbar{
   width:15px;
+  
  }
  ::-webkit-scrollbar-track{
   background-color: #022e23;;
   border-radius: 25px;
-  margin-block: 5px;
+  
+  margin-top: 120px;
  }
  ::-webkit-scrollbar-thumb{
   background-color: transparent;
