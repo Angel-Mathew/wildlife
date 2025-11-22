@@ -16,7 +16,7 @@ import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Sightings from './pages/Sightings';
 import Journey from './pages/Journey';
-import Postpg from './pages/postpg';
+import Postpg from './pages/Postpg';
 
 
 

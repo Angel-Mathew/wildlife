@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import './PostPg.css';
+import './Postpg.css';
 import Navbar from '../components/Navbar.jsx';
 
 const Postpg = () =>{

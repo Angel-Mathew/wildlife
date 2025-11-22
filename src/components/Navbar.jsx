@@ -24,7 +24,9 @@ const Navbar = () => {
         <li>
           <Link to="/Journey">My Journey🐾</Link>
         </li>
-       
+       <li>
+        <link to = "/postpg" className='post'>Post🐾</link>
+       </li>
       </ul>
     
       <img src="/gold.png" alt="Gold Corner" className="gold" />
