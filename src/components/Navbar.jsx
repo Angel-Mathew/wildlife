@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Assuming you'll create a CSS file for styling
+import './Navbar.css';
 
 const Navbar = () => {
   return (
@@ -24,11 +24,8 @@ const Navbar = () => {
         <li>
           <Link to="/Journey">My Journey🐾</Link>
         </li>
-       <li>
-        <link to = "/postpg" className='post'>Post🐾</link>
-       </li>
       </ul>
-    
+     <Link to = "/postpg" className='post'>Post</Link>
       <img src="/gold.png" alt="Gold Corner" className="gold" />
     </nav>
     
