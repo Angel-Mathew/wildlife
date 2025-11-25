@@ -17,48 +17,57 @@
 }
 /*the heading section */
 .heading_section{
-    position: absolute;
-    top:150px;
-    left:-500px;
-    margin-top: 0;
-    margin-left: 0;
-   z-index:10; /* ensure it stays above other elements */
-    display:flex;
-    align-items: center;
-    
-
-
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin-top:40px;
+   position: relative;
 }
-
-
-.intro{
+.headings{
+    position: relative;
+    width:900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading_banner{
+    width: 50%;
+    margin-top: 100px;
+    height: auto;
+    margin-left: -100%;
+   
+}
+.info{
     position: absolute;
+    top:50%;
+    left:33%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.logo_img{
+  width:100px;
+  height:100px;
+  object-fit:contain;
+  margin-top: 80px;
+   margin-left: -126%;
+ 
+}
+.intro{
+   
     color:rgb(0, 0, 0);
     font-family: 'Sail', cursive;
     font-size: 20px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
-   margin-top: 20px;
-    line-height: 1.4;
-    width:50%;
-    left:35%;
-    
-    z-index:2;
+    margin-top: 100px;
+    margin-left: -30px;
+    width: 300px;
     
     
 }
-.logo_img{
-    position:absolute;
-    left:30px;
-    top:45%;
-    transform: translateY(-50%);
-    width:110px;
-    height: 110px;
-    
-    object-fit: contain;
-    padding: 5px;
-    z-index:3;
-}
+
 /*upload section*/
 .upload_section{
     background-color: #03403D;
@@ -73,7 +82,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 100%;
+    margin-top: 120px;
     
 }
 .upload_section .btns{

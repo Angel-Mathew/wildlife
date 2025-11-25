@@ -31,11 +31,15 @@ const Journey = () => {
     <div className="pg_container">
       <Navbar />
       
-      <div className="heading_section">
-        <img src="/borderh.png" alt="hello wildlife lovers! welcome" className="heading_banner" />
-        <h1 className="intro">Hello wildlife lovers! Share the harmonious essence of the wild</h1>
-        <img src="/wildsoar.png" alt="logo" className="logo_img" />
+    <div className="heading_section">
+      <div className="headings">
+        <img src="/borderh.png" className="heading_banner"/>
+        <div className="info">
+          <img src="/wildsoar.png" className="logo_img"/>
+          <h1 className="intro"> Hello wildlife lovers! Share the harmonious essence of the wild</h1>
+          </div>
       </div>
+    </div>
       
       <div className="pg_content">
       <div className="upload_section ">
