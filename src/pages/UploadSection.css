@@ -1,5 +1,4 @@
 .upload{
-    
     position:fixed;
     top:0;
     left:0;
@@ -9,47 +8,48 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;  
+
 }
 .uploadingbox{
-    background-color: #053c2b;
-    
-   border-radius: 50px;
-    
-    box-shadow: #05eeff 2px 3px 2px 4px;
-   padding: 30px;
-    width:90%;
-    max-width: 400px;
-    
-    text-align: center;
-    position:relative;
+   background-image: url("/public/uploadsimg.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: transparent;
+   border:none;
+   width: 700px;
+   height: 550px;
+   padding: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
 }
 .close_btn{
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 80px;
+    right: 80px;
     background: none;
     border: none;
     font-size: 20px;
     color: white;
     cursor: pointer;
-    transition: transform 0.2s ease;
-    line-height: 1;
-    padding: 0 5px ;
+    font-weight: bold;
+    z-index:10;
 }
 .close_btn:hover{
     transform: scale(1.2);
+
 }
 .upload_form{
-   
-    padding: 20px;
-    
-    
-display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    min-height: 250px;
+   width:60%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
 
 }
 .content_area{
@@ -57,25 +57,20 @@ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:15px;
     width: 100%;
 }
-.instruction{
-    font-size: 1.1em;
-    color: white;
-    margin-bottom: 10px;
-}
+
 .text_input{
-    width:50%;
-    padding: 10px;
+    width:100%;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 90px;
+    border-radius: 20px;
     font-size: 1em;
     background-color: rgba(0, 0, 0, 0.2);
     color:white;
-    min-height: 50px;
-    resize: vertical;
-    font-family:Arial, sans-serif ;
+    min-height: 80px;
+   font-family:Arial, sans-serif ;
     
     
 
@@ -86,16 +81,16 @@ display: flex;
 .upload_btn{
     background-color:transparent;
   border-radius:50px ;
-    padding:15px 40px;
+    padding:15px 20px;
      font-family: 'Sail', cursive;
      color: #fb9e09;;
     cursor: pointer;
     border:none;
     font-size: 2em;
     font-weight: bold;
-    transition: background-color 0.3s ease,transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: -50px;
+    transition: transform 0.2s ease;
+   
+    margin-top: -20px;
     margin-left: -10px;
 }
 .upload_btn:hover{
