@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;       /* full width */
-  z-index: 10;
+  z-index: 9999;
   height: 100px;  /* adjust based on content */
   box-shadow: #10e4da 0px 12px 20px -10px;
   padding: 10px 20px; /* spacing inside */
@@ -53,6 +53,7 @@
 }
 
 .post{
+  position: relative;
   background-color: #613605;
   border:2px solid #FFC706;
   font-family: 'sail',cursive;
@@ -65,6 +66,8 @@
   display: block;
   margin-right: 80px;
   box-shadow: #fb9e09 1px 1px 5px 0;
+  z-index:10;
+  cursor: pointer;
   
 }
 
@@ -75,6 +78,8 @@
   top: -1px;
   right: 30px;
   height: 150px; 
+  pointer-events: none;
+  z-index: 1;
 }
 /* Navbar links */
 .navbar-links {

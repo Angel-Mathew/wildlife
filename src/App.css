@@ -48,12 +48,17 @@ body::before {
   z-index:1;
   position: relative;
   color:black;
-  height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  min-height: 100vh;
   
-
-}
+  overflow-x: hidden;
+  }
+  .main_content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
  ::-webkit-scrollbar{
   width:15px;
   

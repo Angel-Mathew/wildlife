@@ -11,12 +11,13 @@ const Journey = () => {
 
   const handleNewUpload = (newPost) => {
    const existingPosts = JSON.parse(localStorage.getItem('userPosts')) || [];
+
    const updatedPosts = [{...newPost, id: Date.now(), liked:false},...existingPosts];
    localStorage.setItem('userPosts',JSON.stringify(updatedPosts));
+  
    setShowUploadBox(false);
-   navigate('/myjourney/posts');
-  };
-
+  navigate('/posts');
+};
   const handleOpenUploadBox = (type) => {
     setCurrentUploadType(type);
     setShowUploadBox(true);
@@ -29,7 +30,7 @@ const Journey = () => {
   
   return (
     <div className="pg_container">
-      <Navbar />
+    
       
     <div className="heading_section">
       <div className="headings">

@@ -65,7 +65,7 @@ const Categories = () => {
 
   return (
     <>
-      <Navbar />
+    
        
           <div className="container">
         {Object.keys(filteredData).map((Name) => ( 

@@ -5,6 +5,14 @@
     align-items: center;
     padding-top: 80px;
 }
+.add_post{
+    margin-top: 20px;
+    margin-left: -50%;
+    border-top-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+  background-color: #3f2d03;
+   border: 3px solid #d39b38;
+}
 .feed{
     width:100%;
     max-width: 600px;
@@ -14,13 +22,14 @@
     gap:30px;
 }
 .individual_post_card{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.585);
     display:flex;
     flex-direction: column;
     padding: 15px;
+    height: 90%;
 }
 .mediapost{
     width:100%;
@@ -46,22 +55,30 @@
     gap:15px;
     padding-top: 10px;
     border-top: 1px solid #eee;
+    background-color: rgb(0, 0, 0);
+    width: 200%;
+    margin-left: -15px;
+   height: 100px;
+
+    
 }
 .like{
-    width:28px;
-    height:28px;
+    width:50px;
+    height:50px;
     filter:invert(0.2);
     transition: transform 0.2s ease,filter 0.2s ease;
+    border-radius: 50px;
+    margin-left: 10px;
 }
 .like:hover{
     transform: scale(1.1);
     filter: invert(0.1);
 }
 .comment{
-    width:28px;
-    height:28px;
+    font-size: 100px;
     filter:invert(0.2);
     transition: transform 0.2s ease,filter 0.2s ease;
+    margin-left: 50px;
 }
 .comment:hover{
     transform: scale(1.1);
@@ -73,6 +90,11 @@
     font-size: 20px;
     font-family: 'Sail', cursive;
     margin-top: 50px;
+}
+.delete{
+    margin-top: 40px;
+   
+    font-size: 20px;
 }
 
 /*Media quiries*/
