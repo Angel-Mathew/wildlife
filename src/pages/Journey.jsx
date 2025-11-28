@@ -16,7 +16,7 @@ const Journey = () => {
    localStorage.setItem('userPosts',JSON.stringify(updatedPosts));
   
    setShowUploadBox(false);
-  navigate('/posts');
+  navigate('/postpg');
 };
   const handleOpenUploadBox = (type) => {
     setCurrentUploadType(type);
