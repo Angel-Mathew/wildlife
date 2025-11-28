@@ -17,7 +17,7 @@ const UploadSection = ({onUpload,onClose,uploadType}) => {
       });
     };
     reader.onerror = () => alert("Failed to read file.");
-    reader.readAsDetaURL(file);
+    reader.readAsDataURL(file);
     }
   };
   const handleMainButtonClick = (e) => {

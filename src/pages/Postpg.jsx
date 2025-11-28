@@ -14,7 +14,7 @@ const Postpg = () =>{
     //------------------------------------Delete--------------------------
     const handleDelete = (id) => {
         if (window.confirm("Do you want to delete this post?")) {
-            const updatedPosts = posts.filter((posts) => post.id !== id);
+            const updatedPosts = posts.filter((post) => post.id !== id);
             setPosts(updatedPosts); 
             localStorage.setItem('userPosts',JSON.stringify(updatedPosts));
         }
@@ -55,21 +55,25 @@ const Postpg = () =>{
                             {post.type === 'text' && post.content && (<p className="text">{post.content}</p>)}
                             {/* ------------------------------------User interaction--------------*/ }
                             <div className="user_interaction">
-                                <img
+                               <span className="comment" onClick={() => toggleCommentBox(post.id)}> 💬 </span>
+                               <button className="delete" onClick={() => handleDelete(post.id)} title="Delete Post">
+                                 🗑️
+                                 </button>
+                                  <img
                                 src={post.liked? "/likefilled.png":"/like.png"}
                                 
                                 className="like"
                                 onClick={() => handlelikeToggle(post.id)}
                                 style={{cursor:"pointer"}} />
-                               <button className="delete" onClick={() => handleDelete(post.id)} title="Delete Post">
-                                 🗑️
-                                 </button>
-                                  <span className="comment" onClick={() => toggleCommentBox(post.id)}> 💬 </span>
+                                  
                                 </div>
                                 </div>
                     ))
                 ):(
-                    <p className="no_post_mesg">No posts.Be the first to share your adventure!</p>
+                   <div className="no_post_mesgs">
+                    <p className="no_post_mesg1"> No post.</p>
+                    <p className="no_post_mesg2">Be first to share!🤗</p>
+                    </div>
                 )}
             </div>
         </div>
