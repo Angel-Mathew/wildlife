@@ -7,10 +7,19 @@ const Postpg = () =>{
     const [posts, setPosts] = useState([]);
    const [activePostId,setActivePostId] = useState(null)
 
-    useEffect (() => {
-  const storedPosts = JSON.parse(localStorage.getItem('userPosts')) || [];
-  setPosts(storedPosts);
-    },[]);
+    useEffect(() => {
+        const fetchPosts = async() => {
+            try{
+                const res =await fetch('http://localhost:5000/posts');
+                const data = await res.json();
+                setPosts(data);
+            } catch (error){
+                console.error("Error fetching posts:",error);
+            }
+        };
+        fetchPosts();
+    }, []);
+                
     //------------------------------------Delete--------------------------
     const handleDelete = (id) => {
         if (window.confirm("Do you want to delete this post?")) {

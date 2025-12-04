@@ -1,30 +1,157 @@
-.open{
-    position: absolute;
+.btn_saparate{
+  position: absolute;
     top: 40px;
-    right: -60%;
+    right: -100%;
     border-top-left-radius: 15px;
   border-bottom-right-radius:15px ;
- 
-    background:  #055757;
-    color: #ffffff;
-   font-size:25px;
-  font-family: 'Sail', cursive;
-     padding: 15px 20px;
-    border: 2px solid #d39b38;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #03403D;
+    border: 2px solid #563504;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.952);
-  
-
-}
-.sign-form-container{
+    padding:5px 10px;
+    z-index:1000;
+  }
+  /*Sign in using MongoDB */
+  .Sign_in{
+    background: transparent;
+    border:none;
+    color: #D8B335;
+    font-size:25px;
+    font-family: 'Sail', cursive;
+    cursor: pointer;
+  padding: 1px ;
+    transform: transform 0.2s ease;
+  }
+  .Sign_in:hover{
+   color: #ffffff;
+    border-radius: 10px;
+    transform: scale(1.08);
+  }
+  /*The saparate line*/
+  .line{
+    color: #D8B335;
+    font-size: 25px;
+    margin-left:  2px;
+    font-weight: bold;
+    user-select: none;
+  }
+  /*Sign up using Google */
+  .google{
+    background: transparent;
+    border:none;
+    color:  #D8B335;
+    font-family: 'sail', cursive;
+    font-size: 25px;
+    cursor: pointer;
+    padding:  1px ;
+    transition: transform 0.2s ease;
+  }
+  .google:hover{
+    
+    color: #ffffff;
+    border-radius: 10px;
+    transform: scale(1.08);
+  }
+/*the popup*/
+.sign_form_container{
     position: absolute;
-    top: 0;
-    right: -60%;
-    width: 200px;
-  padding: 20px;
+    margin-top: -150px;
+    right: -50%;
+    width: 300px;
+    height: 120px;
+  padding: 25px;
     background: #055757;
    border-top-left-radius: 10px;
   border-bottom-right-radius:10px ;
    border: 2px solid #d39b38;
     align-items: center;
  
+}
+.email, .password{
+  width: 150px;
+  box-sizing: border-box;
+}
+.sign_form{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+  margin-top: 10px;
+}
+.sign_form input{
+  padding: 10px;
+  border-radius: 5px;
+ 
+  font-size: 14px;
+  outline:none;
+}
+button[type="close"]{
+  align-self: flex-end;
+  background: transparent;
+  border:none;
+  color: #d39b38;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top:5px;
+right:10px;}
+
+button[type="close"]:hover{
+  color: #ffffff;
+}
+button[type="submit"]{
+  position: absolute;
+ bottom: 20px;
+  right:20px;
+  background-color: #3f2d03;
+  border:2px solid #FFC706;
+font-size: 20px;
+font-family: 'sail', cursive;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+   border: 3px solid #d39b38;
+  padding: 10px;
+  color: white;
+  
+ z-index:10;
+  cursor: pointer;
+  width: 90px;
+  
+  
+}
+button[type="submit"]:hover{
+  background-color: #000000;
+}
+/*User profile icon*/
+.user_info{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background-color: white;
+  padding:10px 20px;
+  border-radius:10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 0 15px 15px 0 15px rgba(0, 0, 0, 0.2);
+z-index:1000;
+font-family: sans-serif;
+}
+.user_info h3{
+  margin: 5px 0;
+  font-size: 16px;
+  color:#055757;
+}
+.user_info img{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  margin:10px 0;
+}
+.user_info p{
+  margin:0;
+  font-size: 14px;
+  color:#333;
 }

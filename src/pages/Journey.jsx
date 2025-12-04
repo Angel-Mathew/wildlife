@@ -10,13 +10,7 @@ const Journey = () => {
   const navigate = useNavigate();
 
   const handleNewUpload = (newPost) => {
-   const existingPosts = JSON.parse(localStorage.getItem('userPosts')) || [];
-
-   const updatedPosts = [{...newPost, id: Date.now(), liked:false},...existingPosts];
-   localStorage.setItem('userPosts',JSON.stringify(updatedPosts));
-  
-   setShowUploadBox(false);
-  navigate('/postpg');
+  if (upload)
 };
   const handleOpenUploadBox = (type) => {
     setCurrentUploadType(type);
