@@ -118,6 +118,7 @@ const [formData, setFormData] = useState({
     )}
     {user && (
       <div className='user_info'>
+          
         <h3>🤗Welcome, {user.name}</h3>
         <img src={user.picture} alt="User Profile" />
         
