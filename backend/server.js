@@ -75,7 +75,7 @@ app.post('/google-signin', async (req, res) => {
         res.status(500).json({ message: 'Server error during Google sign-in' });
     }
 });
- app.post("upload",upload.single('file'),async(req,res)=>{
+ app.post("/upload",upload.single('file'),async(req,res)=>{
     try{
         if(!req.file){
             return res.status(400).json({message:"No file uploaded"});
@@ -103,5 +103,28 @@ app.get('/posts', async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: 'Error fetching posts' });
     }
+    });
+app.post('/upload-text', async (req, res) => {
+    try{
+        const newPost = new Post({
+            caption: req.body.caption,
+            mediaType: 'text',
+        });
+        await newPost.save();
+        res.status(201).json(newPost);
+    } catch (error){
+        console.error("Error uploading text post:",error);
+        res.status(500).json({message:"Upload failed"});
+    }
+});
+    app.delete('/posts/:id', async (req, res) => {
+        try{
+            const { id } = req.params;
+            await Post.findByIdAndDelete(id);
+            res.status(200).json({ message: 'Post deleted successfully' });
+        } catch (error){
+            console.error("Error deleting post:",error);
+            res.status(500).json({ message: 'Error deleting post' });
+        }
     });
     app.listen(5000,() => console.log('Server running on port 5000'));

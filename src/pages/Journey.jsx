@@ -9,11 +9,30 @@ const Journey = () => {
   const [currentUploadType, setCurrentUploadType] = useState('image');
   const navigate = useNavigate();
 
-  const handleNewUpload = async (newPost) => {
+  const handleNewUpload = async (uploadData) => {
   if (uploadData.type === "text"){
-    alert("Please upload an Image,Video or text");
+   try{
+    const res = await fetch('http://localhost:5000/upload-text',{
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ caption: uploadData.caption }),
+    });
+    if (res.ok){
+      setShowUploadBox(false);
+      navigate('/postpg');
+    } else {
+      alert("Upload failed");
+    }
+    } catch (error){
+      console.error("Error uploading text post:",error);
+      alert("Server error.");
+
+   }
     return;
   }
+  
   const formData = new FormData();
   formData.append('file',uploadData.file);
   try{
@@ -22,8 +41,8 @@ const Journey = () => {
       body: formData,
     });
     if (res.ok){
-      alert("Upload Successful!");
-      setShowUploadBox(false);
+     setShowUploadBox(false);
+      navigate('/postpg');
     } else {
       alert("Upload failed");
     }
