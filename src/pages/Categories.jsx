@@ -54,7 +54,7 @@ const Categories = () => {
     "Birds": "/asset/bg/bird_popupbg.png",
     "Fish": "/asset/bg/fish_popupbg.png",
   };
-  //explanation:
+  
   // This for popup screen background,each category  has different background  
   // such as animals category the popup screen will have land background,
   // reptile category the popup screen green bg

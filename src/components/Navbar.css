@@ -4,14 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;   /* stays on top */
+  position: fixed;   
   top: 0;
   left: 0;
-  width: 100%;       /* full width */
+  width: 100%;      
   z-index: 9999;
-  height: 100px;  /* adjust based on content */
+  height: 100px;  
   box-shadow: #10e4da 0px 12px 20px -10px;
-  padding: 10px 20px; /* spacing inside */
+  padding: 10px 20px; 
 }
 
 /* Logo box with ribbon */
@@ -36,10 +36,10 @@
 
 .ribbon {
   position: absolute;
-  left: -1%;  /* adjust based on your ribbon PNG */
+  left: -1%;  
   top: -20%;
   height: 200px;
-  z-index: -2; /* behind text */
+  z-index: -2; 
  
 }
 .name {
@@ -113,4 +113,190 @@ gap: 20px;
   color: #fb9e09;
   padding: 5px 10px;
   border-radius: 10%;
+}
+ /* media quires*/
+ /* small mobile*/
+ @media (min-width: 320px) and (max-width: 480px) {
+  .navbar{
+    height: 50px;
+    width: 90%;   
+
+  }
+  .logo{
+    height: 50px;
+    margin-top: -6%;
+   margin-left: -15px;
+  }
+  
+  .ribbon{
+    height: 70px;
+    top: -25%;
+    left: -25%;
+  }
+  .name {
+  font-family: 'Sail', cursive;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-left: -10%;
+  
+}
+.gold {
+  position: absolute;
+  top: -1px;
+  right: 8px;
+  height: 50%; 
+  
+}
+.navbar-links li {
+    font-size: 6px;
+    margin-left: -15px;
+    margin-right: -2%;
+    
+   
+  }
+.post{
+  font-size: 6px;
+ margin-right: -5px;
+  padding: 5px;
+ 
+}
+
+
+ }
+  /* mobile M */
+ @media (min-width:375px) and (max-width:425px){
+.navbar-links li {
+    font-size: 8px;
+    margin-left: -15px;
+    margin-right: -2%;
+    
+   
+  }
+.post{
+  font-size: 8px;
+ margin-right: -5px;
+  padding: 5px;
+  
+}
+.gold {
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  height: 60%; 
+  
+}
+}
+/* mobile L */
+ @media (min-width:425px) and (max-width:768px){
+ .navbar{
+  height: 50px;
+  width: 92%;   
+}
+.gold {
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  height: 80%; 
+  
+}
+.post{
+  font-size: 8px;
+ margin-right: -5px;
+  padding: 5px;
+  
+}
+.navbar-links li {
+    font-size: 10px;
+    margin-left: -15px;
+    margin-right: -2%;
+    
+   
+  }
+
+
+ }
+  /* tablet*/
+  @media (min-width:768px) and (max-width:1024px){
+      .navbar{
+    height: 50px;
+    width: 96%;   
+
+  }
+  .logo{
+    height: 90px;
+    margin-top: -6%;
+   margin-left: -15px;
+  }
+  
+  .ribbon{
+    height: 90px;
+    top: -2%;
+    left: -5%;
+  }
+  .name {
+  font-family: 'Sail', cursive;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-left: -10%;
+  
+}
+.gold {
+  position: absolute;
+  top: -1px;
+  right: 8px;
+  height: 90%; 
+  
+}
+.navbar-links li {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: -2%;
+    
+   
+  }
+.post{
+  font-size: 15px;
+ margin-right: 10px;
+  padding: 10px;
+ 
+}
+  }
+  /* Laptop*/
+  @media (min-width:1024px) and (max-width:1440px){
+      .navbar{
+    height: 80px;
+    width: 98%;   
+
+  }
+  .logo{
+    height: 120px;
+    margin-top: -5%;
+   margin-left: -10px;
+  }
+  .ribbon{
+    height: 150px;
+    top: -13%;
+    left: -3%;
+  }
+  .name {
+    font-size: 20px;
+    margin-left: 1px;
+  }
+  .gold{
+    height: 120px;
+  }
+  .navbar-links li {
+    font-size: 16px;
+    margin-left: 100px;
+    margin-right: -10%;
+    
+   
+  }
+.post{
+  font-size: 20px;
+ margin-right: 50px;
+  padding: 15px;
+}
 }

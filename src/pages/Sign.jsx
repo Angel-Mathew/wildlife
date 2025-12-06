@@ -117,12 +117,12 @@ const [formData, setFormData] = useState({
       </div>
     )}
     {user && (
+
       <div className='user_info'>
-          
+        <button onClick={() => setUser(null)} style={{position:'absolute',top:'10px',right:'10px',fontSize:'16px',fontWeight:'bold',cursor:'pointer',color:'black',background:'transparent',border:'none'}}>X</button>  
         <h3>🤗Welcome, {user.name}</h3>
         <img src={user.picture} alt="User Profile" />
-        
-      </div>
+     </div>
     )}
     </>
   );

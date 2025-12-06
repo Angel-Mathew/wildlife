@@ -95,5 +95,31 @@ min-height: 50px;
   align-items: center;
   padding: 20px;
 }
+@media (min-width: 320px) and (max-width: 480px){
+  ::-webkit-scrollbar{
+  width:10px;
+  
+ }
+ ::-webkit-scrollbar-track{
+  
+  
+  margin-top: 50px;
+ }
+ ::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  background-image: radial-gradient(
+    circle, 
+    
+    #60f4e0 2%,
+    #dc2020 65%,
+    #cb1db7 71%,
+    #f0b953 100%
+);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 10px 10px;
+min-height: 20px;
 
+ }
+}
 

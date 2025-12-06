@@ -3,7 +3,7 @@
 .main_image {
  width: 101%;
   height: auto;
-  margin-top: 5%; /* to avoid being hidden under the fixed header */
+  margin-top: 5%; 
  margin-left: -2%;
   display: block;
   
@@ -66,11 +66,11 @@
 
 .bird {
   position: absolute;
-  top: 160px;     /* adjust vertically */
-  left: -100%;   /* adjust horizontally */
-  width: 45px;  /* scale as needed */
+  top: 160px;    
+  left: -100%;  
+  width: 45px; 
   height: auto;
-  z-index: 3;   /* above the label image */
+  z-index: 3;  
 }
 
 .about{
@@ -126,7 +126,7 @@
 }
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(2, 200px); /* fixed size grid cells */
+  grid-template-columns: repeat(2, 200px); 
   grid-template-rows: repeat(2, 210px);
   gap: 0;
   justify-items: center;
@@ -176,7 +176,7 @@
   color: white;
   font-family: "Sigmar One", sans-serif;
   text-shadow: 0 0 10px black;
-  pointer-events: none; /* so clicks go through to the image */
+  pointer-events: none;
 }
 .name3 {
   position: absolute;
@@ -188,7 +188,7 @@
   color: white;
   font-family: "Sigmar One", sans-serif;
   text-shadow: 0 0 10px black;
-  pointer-events: none; /* so clicks go through to the image */
+  pointer-events: none;
 }
 .name4 {
   position: absolute;
@@ -200,7 +200,7 @@
   color: white;
   font-family: "Sigmar One", sans-serif;
   text-shadow: 0 0 10px black;
-  pointer-events: none; /* so clicks go through to the image */
+  pointer-events: none; 
 }
 
 
@@ -208,14 +208,42 @@
 
 .design {
   position: relative;
-  width: 100%;        /* same width as footer */
-  margin-left: 0;     /* reset */
+  width: 100%;        
+  margin-left: 0;    
   display: flex;
-  justify-content: center; /* center animals */
+  justify-content: center; 
   
 }
 .animals {
   gap: 5px;
   width: 800%;
 }
+ /* media quires*/
+ /* small mobile*/
+ @media (min-width: 320px) and (max-width: 480px){
+ .main_image {
+ width: 90%;
+ margin-top:11%; 
+  margin-left: 5%;
+}
+.introduction {
+ font-size: 6px;
+ width: 25%;
+ margin-top: -50%;
+ margin-left: 3%;
+ }
+ .welcome {
+  margin-top: -100px;
+ margin-left: 8%;
+ padding: 3px;
+font-size: 5px;
+}
+.about{
+  width: 100%;
+  height: 100%;
+  margin-top: -150%;
+  margin-left: 0%;
 
+  
+ }
+ }
