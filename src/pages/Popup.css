@@ -1,7 +1,7 @@
-/* Overlay that covers the whole screen */
+
 .popup_overlay {
     position: fixed;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -14,88 +14,182 @@
 }
 
 .popup_content_wrapper {
-    position: relative; /* Needed for absolute positioning of close button and circle image */
-    padding: 30px; /* Padding for the overall content area */
-    border-radius: 40px; /* This creates the rounded border for the entire popup */
+    position: relative;
+    padding: 30px; 
+    border-radius: 40px; 
     box-shadow: 2px 6px 20px rgb(255, 255, 255);
-   width: 60%; /* Maximum width */
-    height: 60%; /* Max height relative to viewport height */
-     background-size: cover;      /* Ensures the image fills the area */
-    background-position: center; /* Centers the image */
+   width: 50%; 
+    height: 65%; 
+     background-size: cover;      
+    background-position: center; 
     background-repeat: no-repeat;
-    color: white; /* Default text color for background images */
-    display: flex; /* Use flexbox for internal layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text by default */
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
    
 }
 
 
-/* Close button style */
+
 .popup_close_button {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #055757; /* Red color */
+    background: #055757; 
     color: #ffffff;
     border: none;
-    border-radius: 50%; /* Make it round */
-    width: 35px; /* Slightly larger */
+    border-radius: 50%; 
+    width: 35px;
     height: 35px;
-    font-size: 20px; /* Larger font */
+    font-size: 20px; 
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-    z-index: 1010; /* Ensure close button is above everything */
+    z-index: 1010;
 }
 
 .popup_close_button:hover {
-    background-color: #e63200; /* Darker red on hover */
+    background-color: #e63200; 
 }
 
 
-/* Circular image container (the white circle) */
+
 .imagecirclecontainers {
-    position: absolute; /* Position relative to .popup_content_wrapper */
-    margin-top: 80px;
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for  centering and overlap */
-    width: 150px; /* Size of the circle */
+    position: absolute; 
+    margin-top: 70px;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 150px; 
     height: 150px;
     border-radius: 50%;
-    overflow: hidden; /*  to keep image within circle */
-    border: 5px solid #036e49; /* Golden border */
+    overflow: hidden; 
+    border: 5px solid #036e49; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     background-color: rgb(255, 255, 255); 
    
-    z-index: 1005; /* Above other content but below close button */
+    z-index: 1005; 
 }
 
-/* The actual image *inside* the white circle */
+
 .imageincircle {
-    width: 100%; /* Make image fill the circle container */
+    width: 100%;
     height: 100%;
-    object-fit: contain; /*  contain will scale the image down to fit, preserving aspect ratio.*/
-    display: block; /* Remove any extra space below image */
+    object-fit: contain;
+    display: block; 
    
 }
-
-
-/* Description box (the rounded rectangle for text) */
 .boxfordescription{
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.7); 
     border: 2px solid #D8B335; 
-    border-radius: 15px; /* Rounded corners */
-    padding: 35px; 
-    margin-top: 115px; 
-    width: 50%; 
+    border-radius: 15px;
+   padding: 35px; 
+    margin-top: 109px; 
+    width: 55%; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    color: white; /* Text color inside the box */
+    color: white;
+    font-size: 20px;
+}
+/* media quires*/
+ /* small mobile*/
+
+@media (min-width: 320px) and (max-width: 480px){
+ 
+.imageincircle {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block; 
+   
+}
+.imagecirclecontainers {
+   top:-30px;
+    width: 80px; 
+    height: 80px;
+    
+}
+.popup_content_wrapper {
+    position: relative;
+     width: 70%; 
+    height: 55%; 
+ 
+   
+}
+.boxfordescription{
+   padding: 35px; 
+    margin-top: 30px; 
+    width: 70%; 
+    height: 55%;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 10px;
+}
+
+}
+/*Tablet*/
+  @media (min-width:768px) and (max-width:1024px){
+     .popup_overlay {
+   
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+   
+    
+}
+.imageincircle {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block; 
+   
+}
+.imagecirclecontainers {
+   top:-30px;
+    width: 80px; 
+    height: 80px;
+    
+}
+.popup_content_wrapper {
+  top:26px;
+   width: 60%; 
+   height: 65%; 
+    
+}
+
+.boxfordescription{
+   padding: 35px; 
+    margin-top: 30px; 
+    width: 80%; 
+    height: 70%;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 17px;
+}
+
+  }
+   /*Laptop*/
+   @media (min-width:1024px) and (max-width:1439px){
+    .popup_content_wrapper {
+  top:50px;
+   width: 50%; 
+   height: 70%; 
+    
+}
+
+.boxfordescription{
+   padding: 35px; 
+    margin-top: 30px; 
+    width: 80%; 
+    height: 70%;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: white;
     font-size: 20px;
 }
 
+   }
 
 

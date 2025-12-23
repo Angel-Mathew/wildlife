@@ -155,3 +155,162 @@ font-family: sans-serif;
   font-size: 14px;
   color:#333;
 }
+/* media quires*/
+ /* small mobile*/
+
+@media (min-width: 320px) and (max-width: 480px){
+  .Sign_in{
+    background: transparent;
+    border:none;
+    color: #D8B335;
+    font-size:7px;
+    font-family: 'Sail', cursive;
+    cursor: pointer;
+  padding: 0 ;
+    transform: transform 0.2s ease;
+  }
+   .line{
+    color: #D8B335;
+    font-size: 7px;
+    margin-left:  2px;
+    font-weight: bold;
+    user-select: none;
+  }
+ 
+  .google{
+    background: transparent;
+    border:none;
+    color:  #D8B335;
+    font-family: 'sail', cursive;
+    font-size: 7px;
+    cursor: pointer;
+    padding:  1px ;
+    transition: transform 0.2s ease;
+  }
+  .btn_saparate{
+    top: 30px;
+    right: -50%;
+    padding:1px 10px;
+    z-index:1000;
+  }
+  .sign_form_container{
+    position: absolute;
+    margin-top: -170px;
+    right: -20%;
+    width: 100px;
+    height: 100px;
+  padding: 25px;
+    background: #055757;
+   border-top-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+   border: 2px solid #d39b38;
+    align-items: center;
+ 
+}
+.email, .password{
+  width: 100px;
+  height: 10px;
+  box-sizing: border-box;
+  margin-left: -10px;
+  
+}
+.sign_form{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+  margin-top: 10px;
+}
+.sign_form input{
+  padding: 10px;
+  border-radius: 5px;
+ 
+  font-size: 14px;
+  outline:none;
+}
+button[type="close"]{
+  align-self: flex-end;
+  background: transparent;
+  border:none;
+  color: #d39b38;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top:5px;
+right:10px;}
+
+
+button[type="submit"]{
+  position: absolute;
+ bottom: 20px;
+  right:40px;
+ font-size: 10px;
+z-index:10;
+cursor: pointer;
+  width: 50px;
+  height: 10px;
+  padding: 10px;
+}
+.user_info{
+  position:absolute;
+  top:2px;
+  right:20px;
+  background-color: white;
+  padding:1px 20px;
+  
+ 
+}
+.user_info h3{
+  margin: 5px 0;
+  font-size: 10px;
+  color:#055757;
+}
+.user_info img{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  margin:10px 0;
+}
+.user_info p{
+  margin:0;
+  font-size: 10px;
+  color:#333;
+}
+}
+/* tablet*/
+ @media (min-width:768px) and (max-width:1024px){
+   .Sign_in{
+    background: transparent;
+    border:none;
+    color: #D8B335;
+    font-size:20px;
+    font-family: 'Sail', cursive;
+    cursor: pointer;
+  padding: 0 ;
+    transform: transform 0.2s ease;
+  }
+   .line{
+    color: #D8B335;
+    font-size: 20px;
+    margin-left:  2px;
+    font-weight: bold;
+    user-select: none;
+  }
+ 
+  .google{
+    background: transparent;
+    border:none;
+    color:  #D8B335;
+    font-family: 'sail', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    padding:  1px ;
+    transition: transform 0.2s ease;
+  }
+  .btn_saparate{
+    top: 60px;
+    right: -50%;
+    padding:1px 10px;
+    z-index:1000;
+  }
+ }

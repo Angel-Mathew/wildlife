@@ -1,12 +1,11 @@
 
-
 import React from 'react'; 
 import './Popup.css';
 
 const Popup = ({ livingbeing, onClose, categoryBackgrounds }) => {
   if (!livingbeing) return null;
 
-  const details = livingbeing.description || "No detailed information available for this creature.";
+  const details = livingbeing.description || "No information available";
 
 
   const getBackgroundImage = () => {
@@ -34,7 +33,7 @@ const Popup = ({ livingbeing, onClose, categoryBackgrounds }) => {
       <div
         className="popup_content_wrapper"
         onClick={(e) => e.stopPropagation()}
-        style={{ backgroundImage: `url(${bgImage})` }} // Apply dynamic background
+        style={{ backgroundImage: `url(${bgImage})` }} 
       >
         <button className="popup_close_button" onClick={onClose}>X</button>
         

@@ -50,7 +50,8 @@ const Sightings = () => {
 
     return (
         <div className="sightings-page">
-            <p>This is section of animals located in each continent, to see the animals click on card and menu drop containing animals will be displayed</p>
+            <p className='note'> Here you will able to view variety of  animals located in each contient.<br/>To view:tap on the map </p>
+            
            <div className="sightings-grid">
                 {continents.map((continent) => (
                     <div key={continent.id} className="continent-wrapper">
