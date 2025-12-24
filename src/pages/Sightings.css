@@ -106,8 +106,8 @@ text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.845);
     font-size: 1em;
    
 }
-/* media quires*/
- /* small mobile*/
+/* -------------------- media quires -----------------------------*/
+ /* ------------------- Small mobile -----------------------------*/
 
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -156,7 +156,7 @@ height: 70px;
     overflow-x: hidden;
 }
 }
-/* mobile M */
+/* -------------------mobile M --------------------------- */
  @media (min-width:375px) and (max-width:425px){
    
 
@@ -170,7 +170,7 @@ height: 70px;
  box-sizing: border-box;
 }
  }
- /*Tablet*/
+ /*---------------------Tablet-----------------------*/
   @media (min-width:768px) and (max-width:1024px){
     .sightings-grid {
     
@@ -183,7 +183,7 @@ height: 70px;
  
 }
   }
-   /*Laptop*/
+   /*--------------------- Laptop ---------------------------*/
    @media (min-width:1024px) and (max-width:1439px){
     .Sightingscard {
     margin-top: 50%;

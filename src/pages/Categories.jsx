@@ -1,15 +1,13 @@
 import React, { useState,useEffect } from 'react'; 
-import { Link, useParams } from 'react-router-dom';//react-route-dom navigate the  components
-import livingbeingdata from '../assets/data/livingbeing.js'; // importing the js file which contain different species with names and images
-import './Categories.css'; // importing style of categories pages
-import Navbar from '../components/Navbar';// importing navigation from components
-import Popup from './Popup.jsx'; // for popup function 
-
-//.......................................................................//
+import { Link, useParams } from 'react-router-dom';//this is used to navigate the  components
+import livingbeingdata from '../assets/data/livingbeing.js'; 
+import './Categories.css'; 
+import Navbar from '../components/Navbar';
+import Popup from './Popup.jsx'; 
 
 
-// the image of the animal and name of animal will be displayed in the card form
-// when clicked on the card,the details of animal will be displayed 
+//--------------- Card ---------------------//
+
 const CategoryCard = ({ name, image, onClick }) => {
   return (
     <div className="card" onClick={onClick}>   
@@ -19,14 +17,16 @@ const CategoryCard = ({ name, image, onClick }) => {
   );
 }
 
-//.......................................................................//
+//------------------Categories-------------------//
 
 const Categories = () => {
   const { categoryName } = useParams();
-  const [selectedlivingbeing, setSelectedlivingbeing] = useState(null);//useState manages in tracking which animal is selected 
-  //Tracks which livingbeing is currently selected (null when nothing is selected ) 
- const [showPopup,setShowPopup]=useState(false) // controls the displaying of popup screen
+  const [selectedlivingbeing, setSelectedlivingbeing] = useState(null);
+ const [showPopup,setShowPopup]=useState(false) 
  const [filteredData, setFilteredData] = useState({});
+/*-------------- In this the selected categories living being displayed --------------*/
+/* meaning in home page there is four main category "Animals","Reptiles","Fishes" and "Birds" so if animals is selected it will filter ---------*/
+/* the data and display the animal if not everything will be shown-----------*/
 
  useEffect(()=>{
   if (categoryName && livingbeingdata[categoryName]){
@@ -40,14 +40,14 @@ const Categories = () => {
     setSelectedlivingbeing({ ...livingbeing, category: Name });
     setShowPopup(true);
   };
-  //handles  in displaying the selected card 
+ 
 
   const handleClosePopup = () => {
     setSelectedlivingbeing(null);
     setShowPopup(false)
-  };// handles in exiting from the popup screen
+  };
 
-
+/*------------------Background each Category's popup-------------------*/
   const categoryBackgrounds = {
     "Animals": "/asset/bg/animal_popupbg.png",
     "Reptiles": "/asset/bg/reptile_popupbg.png",
@@ -55,13 +55,9 @@ const Categories = () => {
     "Fish": "/asset/bg/fish_popupbg.png",
   };
   
-  // This for popup screen background,each category  has different background  
-  // such as animals category the popup screen will have land background,
-  // reptile category the popup screen green bg
-  //bird category the popup screen feathers bg
-  //fish category the popup screen ocean bg
 
-  //.......................................................................//
+
+  
 
   return (
     <>
@@ -69,18 +65,19 @@ const Categories = () => {
        
           <div className="container">
         {Object.keys(filteredData).map((Name) => ( 
-          //filteredData  is used so that single data or specifed data can be displayed
-          // map loops through each category and make section for it
+ 
+ /*------- loops through each category ----------------*/
+         
           <section key={Name} className="sections">
             <h2 className="heading">{Name}</h2>
-            <div className="card_container">  {/* contains a container for all cards */ }
+            <div className="card_container">  
               
               {filteredData[Name].map((livingbeing) => ( 
                 <CategoryCard
-                  key={livingbeing.id} // keys for list items
+                  key={livingbeing.id} 
                   name={livingbeing.name}
                   image={livingbeing.image}
-                  onClick={() => handleCardClick(livingbeing, Name)} // creates a category card and passes name,image and click functiom
+                  onClick={() => handleCardClick(livingbeing, Name)}
                 />
               ))}
             </div>
@@ -88,18 +85,19 @@ const Categories = () => {
         ))}
       </div>
 
+     {/*--------------------------- Displays the popup screen when clicked ---------------------------*/ }
       {showPopup && selectedlivingbeing &&(
         <Popup
           livingbeing={selectedlivingbeing}
           onClose={handleClosePopup}
           categoryBackgrounds={categoryBackgrounds}
-        // handles function of displaying the popup screen and exiting from the popup screen
+        
         />
       )}
     </>
   );
 };
 
- //.......................................................................//
+ 
 
 export default Categories;

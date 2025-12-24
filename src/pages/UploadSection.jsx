@@ -1,6 +1,7 @@
 import React, {useRef,useState} from "react";
 import "./UploadSection.css";
 
+/*---------------------- Upload Section ----------------- */
 const UploadSection = ({onUpload,onClose,uploadType}) => {
   const fileInputRef = useRef(null);
   const [textContent, setTextContent] = useState('');
@@ -14,9 +15,11 @@ const UploadSection = ({onUpload,onClose,uploadType}) => {
       });
     }
   };
+/*----------------------- Handles Main Button ----------------*/
 
 const handleMainButtonClick = (e) => {
   e.preventDefault();
+  /*--------------- Logic for Text Post------------------*/
   if (uploadType === "text") {
   if(textContent.trim()){
     onUpload({ type: "text",caption:textContent.trim()});
@@ -24,6 +27,7 @@ const handleMainButtonClick = (e) => {
     alert("Write your Journey!");
   }
 } else {
+  /*--------------- Logic for Image/Video Post------------------*/
   if (fileInputRef.current){
     fileInputRef.current.click();
   }
@@ -37,6 +41,7 @@ return(
       
       <form>
         <div className="content_area">
+          {/*--------------- Media Input ---------------*/ }
           {(uploadType === "image" || uploadType === "video") && (
             <input
               type="file"
@@ -46,6 +51,7 @@ return(
               style={{ display: 'none' }}
             />
           )}
+          {/*--------------- Text Input ---------------*/ }
           {uploadType === "text" && (
             <textarea
             value ={textContent}
@@ -55,7 +61,9 @@ return(
             rows="7"
             ></textarea>
           )}
+          {/* ------------------ Close button --------------*/ }
           <button onClick={onClose} className="close_btn">X</button>
+          {/* ------------------ Upload button --------------*/ }
           <button onClick ={handleMainButtonClick} className="upload_btn">
             {uploadType === "text" ? "Upload": "Upload"}
           </button>

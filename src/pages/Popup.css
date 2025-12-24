@@ -93,8 +93,8 @@
     color: white;
     font-size: 20px;
 }
-/* media quires*/
- /* small mobile*/
+/*----------------------------- media quires ----------------*/
+/*----------------------------- small mobile ----------------*/
 
 @media (min-width: 320px) and (max-width: 480px){
  
@@ -129,7 +129,7 @@
 }
 
 }
-/*Tablet*/
+/*------------------- Tablet ---------------------------*/
   @media (min-width:768px) and (max-width:1024px){
      .popup_overlay {
    
@@ -171,7 +171,7 @@
 }
 
   }
-   /*Laptop*/
+   /*-------------------- Laptop ----------------------*/
    @media (min-width:1024px) and (max-width:1439px){
     .popup_content_wrapper {
   top:50px;

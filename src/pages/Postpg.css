@@ -42,9 +42,6 @@
     padding-bottom: 0;
     height: auto;
     width: 100%;
-   
-  
-
 }
 .mediapost{
     width:100%;
@@ -63,8 +60,8 @@
     font-size: 1.1em;
     color:#333;
     line-height: 1.5;
-    white-space: pre-wrap; /* keeps whitespaces and line breaks */
-    word-wrap: break-word;/*breaks long words*/
+    white-space: pre-wrap;
+    word-wrap: break-word;
     margin-bottom: 10px;
     flex-grow:1;
     overflow-y: auto;
@@ -138,17 +135,64 @@
     text-shadow: 1px 1px 2px rgb(65, 42, 3);
 }
 
-/*Media quiries*/
-@media(max-width:768px){
-    .feed{
-    padding:10px;
-    gap:20px;
+/*---------------------- Media quires -------------------*/
+ /* -------------------- Small mobile -------------------*/
+@media (min-width: 320px) and (max-width: 480px){
+    .post_display_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    width: 60%;
+    min-height: 100vh;
+    margin-left: -60px;
 }
-.individual_post_card{
-    padding:10px;
+.add_post{
+    margin-top: 40px;
+   padding: 10px 20px;
+  font-size: 20px;
+   margin-left: -100px;
+ 
 }
-.mediapost{
-    max-height: 300px;
+.feed{
+    width:100%;
+    max-width: 500px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+}
+/* ---------------- mobile M -----------------------*/
+ @media (min-width:375px) and (max-width:425px){
+    .add_post{
+    margin-top: 40px;
+   padding: 10px 20px;
+  font-size: 20px;
+   margin-left: -150px;
+ 
+}
+ }
+/*------------------------ mobile l -------------------- */
+ @media (min-width:425px) and (max-width:768px){
+    .add_post{
+    margin-top: 40px;
+   padding: 10px 20px;
+  font-size: 20px;
+   margin-left: -150px;
+ 
+}
+ }
+/*--------------------- tablet --------------------------*/
+ @media (min-width:768px) and (max-width:1024px){
+.add_post{
+background-color: #3f2d03;
+   border: 3px solid #d39b38;
+ font-size: 25px;
+   margin-left: -300px;
+ font-family: 'Sail', cursive;
 }
 
-}
+ }

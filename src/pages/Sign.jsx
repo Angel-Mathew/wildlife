@@ -17,7 +17,7 @@ const [formData, setFormData] = useState({
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value });
   };
-  // Sign in using MongoDB
+  /* ----------------- Sign in using MongoDB ----------------*/
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
@@ -43,7 +43,7 @@ const [formData, setFormData] = useState({
       }
   };
 
-  // Sign-in using Google OAuth
+  /*----------------- Sign-in using Google OAuth ----------------*/
   const googleLogin = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
       console.log("Google token:",tokenResponse);

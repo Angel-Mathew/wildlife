@@ -102,8 +102,8 @@
     
     transform: scale(1.1);
 }
-/* media quires*/
- /* small mobile*/
+/* ------------------------ media quires --------------------------------------*/
+/* ----------------------- small mobile  --------------------------------------*/
 @media (min-width: 320px) and (max-width: 480px){
    
 .headings{
@@ -163,7 +163,7 @@
     line-height: 1;
 }
 }
-/* mobile M */
+/*-------------------- mobile M ------------------------*/
  @media (min-width:375px) and (max-width:425px){
     .info{
     position: absolute;
@@ -192,7 +192,7 @@
    line-height: 1.2; 
 }
  }
-/* mobile l */
+/*----------------- mobile l --------------------------*/
  @media (min-width:425px) and (max-width:768px){
     .info{
     position: absolute;
@@ -221,7 +221,7 @@
    line-height: 1.2; 
 }  
  }
- /* tablet*/
+ /*------------------ tablet ------------------------*/
  @media (min-width:768px) and (max-width:1024px){
    .headings{
     width:100%;
@@ -279,7 +279,7 @@
     line-height: 1;
 }
 }
-/* Laptop*/
+/* ------------------- Laptop -----------------------------*/
   @media (min-width:1024px) and (max-width:1439px){
     .heading_section{
    display: flex;
@@ -332,7 +332,7 @@
     
     
 }
-/*upload section*/
+
 .upload_section{
     max-height: 900px;
     max-width: 900px;

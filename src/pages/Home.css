@@ -1,5 +1,5 @@
 
-/* Main content area */
+/* ------------------------- Main content area -------------------------------------- */
 .main_image {
  width: 100%;
   height: auto;
@@ -21,7 +21,7 @@
   border-radius: 8px;
   font-weight: bold;
 }
-/*this is for the welcome button*/
+/*------------------------this is for the welcome button --------------------------*/
 .welcome {
  margin-left: 5%;
  padding: 10px 25px;
@@ -203,8 +203,8 @@
   text-shadow: 0 0 10px black;
   pointer-events: none; 
 }
-/* media quires*/
- /* small mobile*/
+/*-------------------------------- media quires ------------------------------*/
+/* ------------------------------- small mobile ------------------------------*/
 
 @media (min-width: 320px) and (max-width: 480px) {
 #intro{
@@ -386,7 +386,7 @@ margin-top: 2px;
   color:white;
 }
 }
-/* mobile M */
+/*------------------------------ mobile M ------------------------------------ */
  @media (min-width:375px) and (max-width:425px){
   .main_image{
  margin-top: 12%;
@@ -488,7 +488,7 @@ left:100px;
   color:white;
 }
 }
-/* mobile l */
+/* ------------------- mobile l ----------------------------------------------- */
  @media (min-width:425px) and (max-width:768px){
 
 .main_image{
@@ -608,7 +608,7 @@ margin-top: 2px;
   color:white;
 }
  }
- /* tablet*/
+ /*------------------------ tablet --------------------------------*/
  @media (min-width:768px) and (max-width:1024px){
   .main_image{
     width:100%;
@@ -747,7 +747,7 @@ margin-top: 2px;
   color: white;
   font-family: "Sigmar One", sans-serif;
   text-shadow: 0 0 10px black;
-  pointer-events: none; /* so clicks go through to the image */
+  pointer-events: none;
 }
 .name2 {
   position: absolute;
@@ -787,7 +787,7 @@ margin-top: 2px;
 
 }
  }
- /* Laptop*/
+ /*---------------------- Laptop ------------------------------*/
   @media (min-width:1024px) and (max-width:1439px){
 .main_image{
 width:100%;

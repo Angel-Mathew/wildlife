@@ -1,33 +1,29 @@
-
 import React from 'react'; 
 import './Popup.css';
-
+/*-----------------Popup-------------*/
 const Popup = ({ livingbeing, onClose, categoryBackgrounds }) => {
   if (!livingbeing) return null;
 
   const details = livingbeing.description || "No information available";
 
-
+/*------------------Background each Category's popup-------------------*/
   const getBackgroundImage = () => {
    
     if (livingbeing.bg_popupscreen) {
       console.log(`Using specific livingbeing background: ${livingbeing.name} - ${livingbeing.bg_popupscreen}`);
       return livingbeing.bg_popupscreen;
     }
-    
-    
     if (livingbeing.category && categoryBackgrounds[livingbeing.category]) {
       console.log(`Using category background for ${livingbeing.category}: ${categoryBackgrounds[livingbeing.category]}`);
       return categoryBackgrounds[livingbeing.category];
     }
-
-  
-    console.log("Using default background: src/assets/bg/default_popup_bg.png");
+     console.log("Using default background: src/assets/bg/default_popup_bg.png");
     return 'src/assets/bg/default_popup_bg.png'; 
   };
 
   const bgImage = getBackgroundImage();
 
+/*------------------Popup layout-------------------*/
   return (
     <div className="popup_overlay" onClick={onClose}>
       <div

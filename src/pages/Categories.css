@@ -43,21 +43,21 @@ border-radius: 8px;
      text-shadow: 7px 6px 5px rgb(0, 0, 0);
 }
 .names {
-   background-color: #D8B335; /* This is the golden color from your design */
+   background-color: #D8B335; 
    border: 2px solid #3f2d03;
    margin-top:40px ;
-  padding: 10px 5px; /* Adjust padding as needed for vertical and horizontal space within the golden band */
+  padding: 10px 5px; 
   height: 18px;
   width: 94%;
 border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
   text-align: center;
   font-size: 14px;
-  text-transform: uppercase; /* Uppercase text */
+  text-transform: uppercase; 
    
 }
-/* media quires*/
- /* small mobile*/
+/*----------------------------------------- media quires --------------------------------------------*/
+/*----------------------------------------- small mobile -------------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 480px){
   .card {
@@ -99,7 +99,7 @@ border-bottom-left-radius: 25px;
    
 } 
 }
-/* mobile M */
+/*--------------------------------- mobile M ------------------------------ */
  @media (min-width:375px) and (max-width:425px){
 .card_container {
   display:grid;
@@ -108,7 +108,7 @@ border-bottom-left-radius: 25px;
   margin-left: -10px;
 }
  }
- /* mobile L */
+ /*----------------------------- mobile L ------------------------------ */
  @media (min-width:425px) and (max-width:768px){
 .card_container {
   display:grid;
@@ -117,7 +117,7 @@ border-bottom-left-radius: 25px;
  margin-left: -1px;
 }
  }
- /*Tablet*/
+ /*--------------------------- Tablet ------------------------------*/
   @media (min-width:768px) and (max-width:1024px){
     .card_container {
   display:grid;
@@ -131,9 +131,9 @@ margin-top: 50px;
   margin-left: 20px;
  }
   }
-  /*Laptop*/
+  /*--------------------------Laptop ----------------------------------*/
    @media (min-width:1024px) and (max-width:1439px){
-     .card_container {
+  .card_container {
   display:grid;
   grid-template-columns:repeat(4,200px);
   gap:20px;

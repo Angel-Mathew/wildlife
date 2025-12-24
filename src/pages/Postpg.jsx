@@ -20,7 +20,7 @@ const Postpg = () =>{
         fetchPosts();
     }, []);
                 
-    //------------------------------------Delete--------------------------
+    /*------------------------------------Delete-------------------------- */
     const handleDelete = async (id) => {
         if (window.confirm("Do you want to delete this post?")) {
             try{
@@ -40,7 +40,7 @@ const Postpg = () =>{
 }
     };
     
-  // ------------------------------------Like --------------------------
+  /* ------------------------------------Like --------------------------*/
  const handlelikeToggle = (id) => {
     setPosts((prevPosts) => {
         const updatedPosts = prevPosts.map((post) => 
@@ -50,7 +50,7 @@ const Postpg = () =>{
     });
 
  };
-  //------------------------------------Comment--------------------------
+  /*------------------------------------Comment--------------------------*/
  const toggleCommentBox = (id) => {
     if(activePostId === id){
         setActivePostId(null);
@@ -62,18 +62,18 @@ const Postpg = () =>{
         <div className="post_display_section">
            <Navbar/>
             <div >
-                 {/* ------------------------------------ To display the post in Postpg --------------*/ }
+{/* ------------------ To display the post in Postpg------*/ }
                 <Link to="/journey" className="add_post"> Add Post </Link>
             </div>
             <div className="feed">
-                {/* --------------------------------------------- To Post --------------*/ }
+ {/* ---------------------- To Post --------------*/ }
                 {posts.length>0?(
                     posts.map((post)=>(
                         <div key={post._id} className="individual_post_card">
                             {post.mediaType === 'image' && post.mediaUrl && (<img src ={post.mediaUrl} alt ={'User Post ${post.id}'} className="mediapost"/>)}
                             {post.mediaType === 'video' && post.mediaUrl && (<video src={post.mediaUrl} controls className="mediapost"/>) }
                             {post.mediaType === 'text' && post.caption && (<p className="text">{post.caption}</p>)}
-                            {/* ------------------------------------User interaction--------------*/ }
+{/* ------------------------------------User interaction--------------*/ }
                             <div className="user_interaction">
                                <span className="comment" onClick={() => toggleCommentBox(post._id)}> 💬 </span>
                                <button className="delete" onClick={() => handleDelete(post._id)} title="Delete Post">

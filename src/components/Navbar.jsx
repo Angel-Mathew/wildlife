@@ -7,6 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/">
+        {/*---------------- Logo -----------*/ }
           <div className="logo-box">
         <img src="/wildsoar.png" alt="wildsoarLogo" className="logo" />
         <img src="/design(2).png" alt="wildsoar" className="ribbon" />
@@ -14,6 +15,7 @@ const Navbar = () => {
       </div>
         </Link>
       </div>
+       {/*---------------- Nav links -----------*/ }
       <ul className="navbar-links">
         <li>
           <Link to="/categories">Categories🐾</Link>
@@ -25,7 +27,9 @@ const Navbar = () => {
           <Link to="/Journey">My Journey🐾</Link>
         </li>
       </ul>
+     
      <Link to = "/postpg" className='post'>Post</Link>
+      {/*---------------- Corner design-------*/ }
       <img src="/gold.png" alt="Gold Corner" className="gold" />
     </nav>
     

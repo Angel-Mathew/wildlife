@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import './Home.css'; // Assuming you'll create a CSS file for styling
+import './Home.css'; 
 import livingbeingdata from '../assets/data/livingbeing.js'; 
-import Navbar from '../components/Navbar'; // Adjust the path if your Navbar.jsx is in a different folder
+import Navbar from '../components/Navbar'; 
 
-//-------------------------------------------------------------------//
+
 const Home = () => {
   return (
     <main className="home-container"> <section id="intro">
@@ -21,10 +21,7 @@ a place where they can meet and speak through emotion and action.
       <button className="welcome">welcome to wildlife</button>
     </div>
   </section>
-
-  {/*---------------------------------------------------------*/}
-
-   {/* ABOUT Label Section */}
+{/* ------------------ ABOUT ------------ */}
   <div className="label-container">
     <img src="/label.png" alt="Label" className="label-img" />
     <span className="label-text">ABOUT</span>
@@ -39,9 +36,7 @@ them face-to-face. You can also share your own safari trips in 'My Journey'.
 Note: You can post anything related to wildlife.</p>
   </div>
 
-  {/*---------------------------------------------------------*/}
-
-  {/* Categories */}
+   {/*------------------ Categories -----------------------------*/}
   <section id="Categories">
      <div className="label-container2">
        <img src="/label.png" alt="Label" className="label2" />
@@ -49,9 +44,9 @@ Note: You can post anything related to wildlife.</p>
     <img src="/rabbit.png" alt="rabbit" className="rabbit" />
      </div>
 
-     {/*---------------------------------------------------------*/}
+    
 
-     {/*button for each categories */}
+ {/*----------------button for each categories --------------------------*/}
     
   <div className="categories-grid">
    <Link to="/categories/Animals" className='item'>
@@ -90,4 +85,4 @@ Note: You can post anything related to wildlife.</p>
 
   );
 };
-export default Home; // This is the correct default export
+export default Home; 

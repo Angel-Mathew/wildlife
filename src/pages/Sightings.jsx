@@ -4,6 +4,7 @@ import locationdata from '../assets/data/location';
 import './Sightings.css';
 import Navbar from '../components/Navbar';
 
+/*--------------- Sightings ---------------*/
 const Sightingscard = ({ name, image, onClick }) => {
     return (
         <div className='Sightingscard' onClick={onClick}>
@@ -12,7 +13,7 @@ const Sightingscard = ({ name, image, onClick }) => {
         </div>
     );
 };
-
+/*--------------- DropDown ---------------*/
 const DropdownMenu = ({ animals }) => {
     
     if (!animals || animals.length === 0) {
@@ -38,7 +39,7 @@ const DropdownMenu = ({ animals }) => {
     );
 };
 
-// Main Sightings component
+ /* ------- Sightings component -----*/
 const Sightings = () => {
     const [activeContinent, setActiveContinent] = useState(null);
 

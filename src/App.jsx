@@ -1,17 +1,15 @@
-// App.jsx
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// Importing Navbar and Footer components
+/*-------------- Importing Navbar and Footer components -------------*/
 import Scrolltop from './components/Scrolltop';
 import Navbar from './components/Navbar'; 
 import Footer from './components/Footer'; 
 
 
-//global css
+/*--------------------- Global css ------------------- */
 import './App.css';
 
-// Importing different pages
+/*----------------  Importing different pages --------------- */
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Sightings from './pages/Sightings';
@@ -31,8 +29,9 @@ const App = () => {
       <Navbar />
       <main className="main_content">
         <Routes>
+        {/*----------Main page ---------*/}
         <Route path="/" element={<Home />} />
-        
+        {/*-------In Categories: Displays either all livingbeings  or specific category if one is selected----*/}
         <Route path="/categories/:categoryName?" element={<Categories />} />
         <Route path="/sightings" element={<Sightings />} />
         <Route path="/Journey" element={<Journey />} />
