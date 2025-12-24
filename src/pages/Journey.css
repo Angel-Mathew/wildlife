@@ -102,6 +102,248 @@
     
     transform: scale(1.1);
 }
+/* media quires*/
+ /* small mobile*/
+@media (min-width: 320px) and (max-width: 480px){
+   
+.headings{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.heading_banner{
+    width: 90%;
+    margin-top: 50px;
+    margin-left: -70px;
+}
+.info{
+    position: absolute;
+    top:64%;
+    left: 6%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items:center;
+    gap:8px;
+    width: 80%;
+    justify-content: flex-start;
+}
+.logo_img{
+    width:55px;
+    height:55px;
+    margin-left: -20px;
+    margin-top: -5px;
+    object-fit: contain;
+}
+.intro{
+   font-size: 12px;
+   width: 70%;
+   margin:0;
+   text-align: left;
+   line-height: 1.2; 
+}
+.upload_section{
+    background-color: #03403D;
+   max-height: 50px;
+  margin-left: -40px;
+    margin-top: 10px;
+    
+}
+.upload_section .btns{
+    display: flex;
+    gap: 15px;
+}
+.upload_section button{
+   
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+    line-height: 1;
+}
+}
+/* mobile M */
+ @media (min-width:375px) and (max-width:425px){
+    .info{
+    position: absolute;
+    top:64%;
+    left: 6%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items:center;
+    gap:8px;
+    width: 80%;
+    justify-content: flex-start;
+}
+.logo_img{
+    width:70px;
+    height:70px;
+    margin-left: -20px;
+    margin-top: -5px;
+    object-fit: contain;
+}
+.intro{
+   font-size: 14px;
+   width: 70%;
+   margin-top: -8px;
+   margin-left: -6px;
+   text-align: left;
+   line-height: 1.2; 
+}
+ }
+/* mobile l */
+ @media (min-width:425px) and (max-width:768px){
+    .info{
+    position: absolute;
+    top:64%;
+    left: 6%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items:center;
+    gap:8px;
+    width: 80%;
+    justify-content: flex-start;
+}
+.logo_img{
+    width:83px;
+    height:83px;
+    margin-left: -20px;
+    margin-top: -10px;
+    object-fit: contain;
+}
+.intro{
+   font-size: 16px;
+   width: 70%;
+   margin-top: -8px;
+   margin-left: -6px;
+   text-align: left;
+   line-height: 1.2; 
+}  
+ }
+ /* tablet*/
+ @media (min-width:768px) and (max-width:1024px){
+   .headings{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.heading_banner{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: -70px;
+}
+.info{
+    position: absolute;
+    top:64%;
+    left: 6%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items:center;
+    gap:8px;
+    width: 80%;
+    justify-content: flex-start;
+}
+.logo_img{
+    width:100px;
+    height:100px;
+    margin-left: -35px;
+    margin-top: -25px;
+    object-fit: contain;
+}
+.intro{
+   font-size: 20px;
+   width: 75%;
+   text-align: left;
+   line-height: 1.2; 
+} 
+.upload_section{
+    background-color: #03403D;
+   max-height: 50px;
+  margin-left: -30px;
+    margin-top: 10px;
+    
+}
+.upload_section .btns{
+    display: flex;
+    gap: 15px;
+}
+.upload_section button{
+   
+    font-size: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+    line-height: 1;
+}
+}
+/* Laptop*/
+  @media (min-width:1024px) and (max-width:1439px){
+    .heading_section{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin-top:40px;
+   position: relative;
+}
+.headings{
+    position: relative;
+    width:900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading_banner{
+    width: 50%;
+    margin-top: 100px;
+    height: auto;
+    margin-left: -50%;
+   
+}
+.info{
+    position: absolute;
+    top:50%;
+    left:33%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.logo_img{
+  width:100px;
+  height:100px;
+  object-fit:contain;
+  margin-top: 80px;
+   margin-left: -37%;
+ 
+}
+.intro{
+   
+    color:rgb(0, 0, 0);
+    font-family: 'Sail', cursive;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+    margin-top: 100px;
+    margin-left: -30px;
+    width: 300px;
+    
+    
+}
+/*upload section*/
+.upload_section{
+    max-height: 900px;
+    max-width: 900px;
+ }
+
+.upload_section button{
+   
+    font-size: 60px;
+   
+}
+}
 
 
 

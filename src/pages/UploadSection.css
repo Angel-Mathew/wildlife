@@ -97,3 +97,41 @@
     background-color: #ffffff;
     transform: scale(1.05);
 }
+/* media quires*/
+ /* small mobile*/
+@media (min-width: 320px) and (max-width: 480px){
+    .uploadingbox{
+ 
+   width: 150px;
+   height: 150px;
+   padding: 60px;
+   display: flex;
+  
+}
+.upload_btn{
+   font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+.close_btn{
+    position: absolute;
+    top: 65px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    z-index:10;
+}
+.text_input{
+    width:90%;
+    padding: 10px;
+   font-size: 8px;
+   min-height: 10px;
+}
+
+}

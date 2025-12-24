@@ -52,14 +52,7 @@ color: #ffffff;
 text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.845);
 }
 
-h1 {
-    text-align: center;
-    color: #007bff; 
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
+
 
 
 .sightings-grid {
@@ -113,25 +106,125 @@ h1 {
     font-size: 1em;
    
 }
+/* media quires*/
+ /* small mobile*/
+
 
 @media (min-width: 320px) and (max-width: 480px){
 .note{font-family: 'Sail', cursive;
-    margin-left: 345px;
-    margin-top: 120px;
-    width:300px;
-font-size: 12px;
-color: #ffffff;
-text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.845);
-
-
+      margin-left: -20px;
+    margin-top: 80px;
+    width:100%;
+font-size: 15px;
+padding:0 10px;
 }
 
-
-
-
-
+.Sightingscard {
+   
+    margin-top: 10px;
+ margin-left: -50px;
+ width:140px;
+ height:140px;
+ padding: 10px;
+ box-sizing: border-box;
+}
+.Sightingscard .map {
+width:70px;
+height: 70px;
 }
 
+.sightings-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+    width:95%;
+    margin: 20px auto;
+    padding:0;
+ 
+
+}
+.Sightingscard .Sightingname {
+   font-size:12px;
+   height:auto;
+   padding: 2px 0;
+   margin-top: 10px;
+   width:100%;
+   line-height:1.2
+}
+.sightings-page{
+    padding:10px;
+    overflow-x: hidden;
+}
+}
+/* mobile M */
+ @media (min-width:375px) and (max-width:425px){
+   
+
+.Sightingscard {
+   
+    margin-top: 10px;
+ margin-left: -20px;
+ width:140px;
+ height:140px;
+ padding: 10px;
+ box-sizing: border-box;
+}
+ }
+ /*Tablet*/
+  @media (min-width:768px) and (max-width:1024px){
+    .sightings-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(2,0.1fr);
+    gap:10px;
+    width:100%;
+    margin: 20px auto;
+    padding:0;
+ 
+}
+  }
+   /*Laptop*/
+   @media (min-width:1024px) and (max-width:1439px){
+    .Sightingscard {
+    margin-top: 50%;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 200px;
+   padding: 20px;
+    margin-left: 50px;
+}
+.Sightingscard .map {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.Sightingscard .Sightingname {
+    font-size:20px;
+    margin-top:40px ;
+   height: 25px;
+  width: 100%;
+ 
+}
+.sightings-page {
+      padding: 50px;
+}
+.note{
+font-size: 35px;
+
+}
+.sightings-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(3,0.1fr);
+    gap: 10px;
+    width: 1000px;
+    margin-left:10px;
+    
+    
+}
+   }
 
 
 
